@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="apercu_medium_pro.otf">
+            <string>ApercuPro-Medium</string>
+        </array>
+        <array key="apercu_regular_pro.otf">
+            <string>ApercuPro</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="PeriBear" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="Rvi-jk-Yfa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="tKE-WL-hlI">
+                                <rect key="frame" x="41" y="437" width="24" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="NIG-RL-Hzj"/>
+                                    <constraint firstAttribute="width" constant="24" id="gIB-U2-gvr"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="59F-jj-Lev">
+                                <rect key="frame" x="330" y="437" width="24" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="e7W-nM-Cy6"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Obq-Uz-BwG">
+                                <rect key="frame" x="330" y="478" width="24" height="22"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heat_icon" translatesAutoresizingMaskIntoConstraints="NO" id="CLz-K0-Frh">
+                                <rect key="frame" x="41" y="478" width="24" height="22"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="1wl-ay-FdV">
+                                <rect key="frame" x="309" y="39" width="47" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="ENd-ZL-tPb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Period in 3 days" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                <rect key="frame" x="28" y="87" width="235" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="qhb-hB-rmR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="32"/>
+                                <color key="textColor" red="0.16470588235294117" green="0.1803921568627451" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tb6-jk-QT7" customClass="RoundButton" customModule="PeriBear" customModuleProvider="target">
+                                <rect key="frame" x="23" y="144" width="194" height="53"/>
+                                <fontDescription key="fontDescription" name="ApercuPro" family="Apercu Pro" pointSize="17"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="-7" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Period Started" backgroundImage="roundedBtn">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your PeriBear 🐻" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
+                                <rect key="frame" x="28" y="234" width="176" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="zbp-a4-YfG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="22"/>
+                                <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Controls" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bch-Ng-7hN">
+                                <rect key="frame" x="30" y="392" width="176" height="27"/>
+                                <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="22"/>
+                                <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="70%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5K-df-Wyb">
+                                <rect key="frame" x="93" y="291" width="95" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="mWV-6H-PPN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ApercuPro" family="Apercu Pro" pointSize="28"/>
+                                <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="battery" translatesAutoresizingMaskIntoConstraints="NO" id="lLw-HC-e8q">
+                                <rect key="frame" x="55" y="295" width="24" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="mB7-LT-IYO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lights" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3k-KC-KnV">
+                                <rect key="frame" x="76" y="434" width="95" height="28"/>
+                                <fontDescription key="fontDescription" name="ApercuPro" family="Apercu Pro" pointSize="17"/>
+                                <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battery" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxo-O3-rX2">
+                                <rect key="frame" x="93" y="316" width="95" height="28"/>
+                                <fontDescription key="fontDescription" name="ApercuPro" family="Apercu Pro" pointSize="14"/>
+                                <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbp-oL-97U">
+                                <rect key="frame" x="76" y="475" width="95" height="28"/>
+                                <fontDescription key="fontDescription" name="ApercuPro" family="Apercu Pro" pointSize="17"/>
+                                <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50°C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Cq-On-gEA">
+                                <rect key="frame" x="249" y="288" width="95" height="34"/>
+                                <fontDescription key="fontDescription" name="ApercuPro" family="Apercu Pro" pointSize="28"/>
+                                <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCn-Pp-wb1">
+                                <rect key="frame" x="249" y="316" width="95" height="28"/>
+                                <fontDescription key="fontDescription" name="ApercuPro" family="Apercu Pro" pointSize="14"/>
+                                <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jjB-5Y-ueL">
+                                <rect key="frame" x="260" y="433" width="51" height="31"/>
+                                <color key="tintColor" red="0.76862745099999996" green="0.7725490196" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="onTintColor" red="0.94901960780000005" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kN2-OI-6tf">
+                                <rect key="frame" x="260" y="474" width="51" height="31"/>
+                                <color key="tintColor" red="0.76862745099999996" green="0.7725490196" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="onTintColor" red="0.94901960780000005" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temperature" translatesAutoresizingMaskIntoConstraints="NO" id="H2M-9Y-NiA">
+                                <rect key="frame" x="212" y="294" width="22" height="22"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mIf-gE-Yg9">
+                                <rect key="frame" x="30" y="269" width="314" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.76862745099999996" green="0.7725490196" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gi7-wF-t8J">
+                                <rect key="frame" x="30" y="357" width="314" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.76862745099999996" green="0.7725490196" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wJg-QC-Par">
+                                <rect key="frame" x="187" y="289" width="1" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.76862745099999996" green="0.7725490196" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="H2M-9Y-NiA" firstAttribute="leading" secondItem="a5K-df-Wyb" secondAttribute="trailing" constant="24" id="0Rv-Sm-QXO"/>
+                            <constraint firstItem="CLz-K0-Frh" firstAttribute="top" secondItem="tKE-WL-hlI" secondAttribute="bottom" constant="19" id="3Ro-VU-u6N"/>
+                            <constraint firstItem="tKE-WL-hlI" firstAttribute="bottom" secondItem="59F-jj-Lev" secondAttribute="bottom" id="4jt-rS-LBo"/>
+                            <constraint firstItem="CLz-K0-Frh" firstAttribute="centerY" secondItem="vbp-oL-97U" secondAttribute="centerY" id="54T-Hp-73P"/>
+                            <constraint firstItem="jjB-5Y-ueL" firstAttribute="top" secondItem="tCn-Pp-wb1" secondAttribute="bottom" constant="89" id="66J-0b-j4a"/>
+                            <constraint firstItem="a5K-df-Wyb" firstAttribute="trailing" secondItem="pxo-O3-rX2" secondAttribute="trailing" id="6l8-dd-9gx"/>
+                            <constraint firstItem="bch-Ng-7hN" firstAttribute="top" secondItem="pxo-O3-rX2" secondAttribute="bottom" constant="48" id="7MN-Fd-KOE"/>
+                            <constraint firstItem="jjB-5Y-ueL" firstAttribute="centerY" secondItem="59F-jj-Lev" secondAttribute="centerY" id="7ea-3m-sqP"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="A5M-7J-77L" secondAttribute="trailing" constant="171" id="7r6-yX-lEN"/>
+                            <constraint firstItem="1wl-ay-FdV" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="309" id="8Ol-Xq-29c"/>
+                            <constraint firstItem="tCn-Pp-wb1" firstAttribute="leading" secondItem="pxo-O3-rX2" secondAttribute="trailing" constant="61" id="8ew-dS-wt5"/>
+                            <constraint firstItem="bch-Ng-7hN" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="30" id="9Hs-Ts-dVm"/>
+                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="tb6-jk-QT7" secondAttribute="bottom" constant="37" id="9cX-AA-y3y"/>
+                            <constraint firstItem="F3k-KC-KnV" firstAttribute="leading" secondItem="tKE-WL-hlI" secondAttribute="trailing" constant="11" id="A8t-vQ-rBZ"/>
+                            <constraint firstItem="jjB-5Y-ueL" firstAttribute="leading" secondItem="F3k-KC-KnV" secondAttribute="trailing" constant="89" id="CA0-Dq-01g"/>
+                            <constraint firstItem="1wl-ay-FdV" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="19" id="EbC-Rc-k0X"/>
+                            <constraint firstItem="vbp-oL-97U" firstAttribute="top" secondItem="F3k-KC-KnV" secondAttribute="bottom" constant="13" id="EeI-4P-BfG"/>
+                            <constraint firstItem="lLw-HC-e8q" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="55" id="EiE-ec-xgA"/>
+                            <constraint firstItem="59F-jj-Lev" firstAttribute="leading" secondItem="jjB-5Y-ueL" secondAttribute="trailing" constant="21" id="FYu-yc-MDC"/>
+                            <constraint firstItem="CLz-K0-Frh" firstAttribute="top" secondItem="Obq-Uz-BwG" secondAttribute="top" id="Fa4-FH-dgu"/>
+                            <constraint firstItem="F3k-KC-KnV" firstAttribute="trailing" secondItem="vbp-oL-97U" secondAttribute="trailing" id="Fu5-Jz-1fS"/>
+                            <constraint firstItem="3Cq-On-gEA" firstAttribute="trailing" secondItem="tCn-Pp-wb1" secondAttribute="trailing" id="Glp-xU-Uqg"/>
+                            <constraint firstItem="H2M-9Y-NiA" firstAttribute="top" secondItem="tb6-jk-QT7" secondAttribute="bottom" constant="97" id="IUX-Ki-yBl"/>
+                            <constraint firstItem="59F-jj-Lev" firstAttribute="trailing" secondItem="Obq-Uz-BwG" secondAttribute="trailing" id="KRO-PE-qNq"/>
+                            <constraint firstItem="a5K-df-Wyb" firstAttribute="centerY" secondItem="H2M-9Y-NiA" secondAttribute="centerY" id="L94-rO-GNA"/>
+                            <constraint firstItem="CLz-K0-Frh" firstAttribute="bottom" secondItem="Obq-Uz-BwG" secondAttribute="bottom" id="LLu-80-8Ig"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="H2M-9Y-NiA" secondAttribute="bottom" constant="302" id="LXf-1T-NjA"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="67" id="M3I-Hp-V4M"/>
+                            <constraint firstItem="H2M-9Y-NiA" firstAttribute="centerY" secondItem="3Cq-On-gEA" secondAttribute="centerY" id="MKy-J7-F1e"/>
+                            <constraint firstItem="3Cq-On-gEA" firstAttribute="leading" secondItem="H2M-9Y-NiA" secondAttribute="trailing" constant="15" id="MRi-bt-6j8"/>
+                            <constraint firstItem="a5K-df-Wyb" firstAttribute="top" secondItem="A5M-7J-77L" secondAttribute="bottom" constant="37" id="N2A-Fu-diQ"/>
+                            <constraint firstItem="bch-Ng-7hN" firstAttribute="top" secondItem="a5K-df-Wyb" secondAttribute="bottom" constant="73" id="NhJ-RO-otl"/>
+                            <constraint firstItem="3Cq-On-gEA" firstAttribute="leading" secondItem="tCn-Pp-wb1" secondAttribute="leading" id="Nl5-sZ-Tkl"/>
+                            <constraint firstItem="F3k-KC-KnV" firstAttribute="top" secondItem="bch-Ng-7hN" secondAttribute="bottom" constant="15" id="OmB-O8-uNo"/>
+                            <constraint firstItem="F3k-KC-KnV" firstAttribute="leading" secondItem="vbp-oL-97U" secondAttribute="leading" id="P3m-sY-tex"/>
+                            <constraint firstItem="59F-jj-Lev" firstAttribute="leading" secondItem="Obq-Uz-BwG" secondAttribute="leading" id="QC8-1c-I9o"/>
+                            <constraint firstItem="tKE-WL-hlI" firstAttribute="trailing" secondItem="CLz-K0-Frh" secondAttribute="trailing" id="R6U-p9-QfH"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="tb6-jk-QT7" secondAttribute="trailing" constant="158" id="Srg-Rl-mCB"/>
+                            <constraint firstItem="pxo-O3-rX2" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="93" id="T7A-U7-5OU"/>
+                            <constraint firstItem="pxo-O3-rX2" firstAttribute="top" secondItem="A5M-7J-77L" secondAttribute="bottom" constant="62" id="TSA-A9-2ca"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="3Cq-On-gEA" secondAttribute="trailing" constant="31" id="V0K-0N-69t"/>
+                            <constraint firstItem="tKE-WL-hlI" firstAttribute="leading" secondItem="CLz-K0-Frh" secondAttribute="leading" id="Y95-vV-jMP"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="kN2-OI-6tf" secondAttribute="bottom" constant="113" id="YVq-No-7Jz"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="59F-jj-Lev" secondAttribute="trailing" constant="21" id="ab5-Xh-eFV"/>
+                            <constraint firstItem="pxo-O3-rX2" firstAttribute="firstBaseline" secondItem="tCn-Pp-wb1" secondAttribute="firstBaseline" id="cY1-NL-ym7"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="bch-Ng-7hN" secondAttribute="trailing" constant="169" id="cmI-Sn-Zm9"/>
+                            <constraint firstItem="kN2-OI-6tf" firstAttribute="centerY" secondItem="Obq-Uz-BwG" secondAttribute="centerY" id="d5U-Hl-CwG"/>
+                            <constraint firstItem="pxo-O3-rX2" firstAttribute="baseline" secondItem="tCn-Pp-wb1" secondAttribute="baseline" id="egQ-Rr-VvF"/>
+                            <constraint firstItem="lLw-HC-e8q" firstAttribute="top" secondItem="A5M-7J-77L" secondAttribute="bottom" constant="41" id="feN-W1-vBh"/>
+                            <constraint firstItem="jjB-5Y-ueL" firstAttribute="leading" secondItem="kN2-OI-6tf" secondAttribute="leading" id="fxW-oU-66R"/>
+                            <constraint firstItem="a5K-df-Wyb" firstAttribute="leading" secondItem="pxo-O3-rX2" secondAttribute="leading" id="gXe-e3-jld"/>
+                            <constraint firstItem="kN2-OI-6tf" firstAttribute="top" secondItem="jjB-5Y-ueL" secondAttribute="bottom" constant="10" id="gs6-sl-6On"/>
+                            <constraint firstItem="tb6-jk-QT7" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="23" id="hLC-Bd-JYs"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="1wl-ay-FdV" secondAttribute="trailing" constant="19" id="hqJ-LH-0Kr"/>
+                            <constraint firstItem="59F-jj-Lev" firstAttribute="top" secondItem="tCn-Pp-wb1" secondAttribute="bottom" constant="93" id="jMq-RH-N80"/>
+                            <constraint firstItem="tKE-WL-hlI" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="41" id="kDa-ga-LIf"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="28" id="kQm-7w-Ulo"/>
+                            <constraint firstItem="tKE-WL-hlI" firstAttribute="centerY" secondItem="F3k-KC-KnV" secondAttribute="centerY" id="mDx-Sx-YCM"/>
+                            <constraint firstItem="tb6-jk-QT7" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="14" id="oOT-U9-dzA"/>
+                            <constraint firstItem="bch-Ng-7hN" firstAttribute="top" secondItem="lLw-HC-e8q" secondAttribute="bottom" constant="75" id="oVR-bp-FVK"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="leading" secondItem="A5M-7J-77L" secondAttribute="leading" id="scX-YP-otA"/>
+                            <constraint firstItem="tKE-WL-hlI" firstAttribute="top" secondItem="59F-jj-Lev" secondAttribute="top" id="wZD-Om-EEQ"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="KQZ-1w-vlD" secondAttribute="trailing" constant="112" id="xvC-Bq-8gT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="tabBar_home" id="acW-dT-cKf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="-636.4317841079461"/>
+        </scene>
+        <!--Period-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="PeriBear" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                <rect key="frame" x="87" y="312" width="201.5" height="43"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
+                                <rect key="frame" x="80" y="363" width="215" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
+                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
+                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
+                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Period" image="tabBar_period" id="cPa-gy-q4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="92"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.94901960784313721" green="0.35686274509803922" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.94901960780000005" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="WPJ-vl-BRU" kind="relationship" relationship="viewControllers" id="aGp-cb-kMm"/>
+                        <segue destination="uCF-9a-L6l" kind="relationship" relationship="viewControllers" id="qUK-Qs-E9B"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-745" y="388"/>
+        </scene>
+        <!--Controls-->
+        <scene sceneID="IQp-6H-4RL">
+            <objects>
+                <viewController id="WPJ-vl-BRU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fA0-wb-2gc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="I5Y-MC-bgG">
+                                <rect key="frame" x="300" y="163" width="51" height="31"/>
+                                <color key="tintColor" red="0.76862745098039209" green="0.77254901960784317" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="onTintColor" red="0.94901960780000005" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Light 💡" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="PVu-sH-PjY">
+                                <rect key="frame" x="26" y="80" width="235" height="43"/>
+                                <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="32"/>
+                                <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="PeriBear light settings." lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="hGq-r1-0Vd">
+                                <rect key="frame" x="26" y="125" width="271" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ApercuPro" family="Apercu Pro" pointSize="16"/>
+                                <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="All Colors" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="mmr-xd-zar">
+                                <rect key="frame" x="50" y="163" width="235" height="31"/>
+                                <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="18"/>
+                                <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nZw-1e-yMz">
+                                <rect key="frame" x="300" y="212" width="51" height="31"/>
+                                <color key="tintColor" red="0.76862745098039209" green="0.77254901960784317" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="onTintColor" red="0.94901960780000005" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Red" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="tLd-OG-rgl">
+                                <rect key="frame" x="50" y="212" width="235" height="31"/>
+                                <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="18"/>
+                                <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Yd1-mF-XLB">
+                                <rect key="frame" x="300" y="261" width="51" height="31"/>
+                                <color key="tintColor" red="0.76862745098039209" green="0.77254901960784317" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="onTintColor" red="0.94901960780000005" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Blue" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Yo-Av-vsc">
+                                <rect key="frame" x="50" y="261" width="235" height="31"/>
+                                <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="18"/>
+                                <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Heat 🔥" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="O4h-2l-P5e">
+                                <rect key="frame" x="27" y="328" width="235" height="43"/>
+                                <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="32"/>
+                                <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pil-vW-Xd8">
+                                <rect key="frame" x="25" y="419" width="324" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="8E6-zZ-Jeb"/>
+                                </constraints>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Adjust the heat temperature." lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1Gw-kE-bNm">
+                                <rect key="frame" x="26" y="373" width="271" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ApercuPro" family="Apercu Pro" pointSize="16"/>
+                                <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I5Y-MC-bgG" firstAttribute="leading" secondItem="mmr-xd-zar" secondAttribute="trailing" constant="15" id="4wb-cG-6Qk"/>
+                            <constraint firstItem="tLd-OG-rgl" firstAttribute="top" secondItem="nZw-1e-yMz" secondAttribute="top" id="6XI-01-VQr"/>
+                            <constraint firstItem="O4h-2l-P5e" firstAttribute="top" secondItem="3Yo-Av-vsc" secondAttribute="bottom" constant="36" id="8sr-0b-g81"/>
+                            <constraint firstItem="mmr-xd-zar" firstAttribute="top" secondItem="PVu-sH-PjY" secondAttribute="bottom" constant="20" id="AWq-PY-n1E"/>
+                            <constraint firstItem="3Yo-Av-vsc" firstAttribute="top" secondItem="tLd-OG-rgl" secondAttribute="bottom" constant="18" id="AdK-Mo-ZX9"/>
+                            <constraint firstItem="pAR-Gw-8J0" firstAttribute="trailing" secondItem="O4h-2l-P5e" secondAttribute="trailing" constant="113" id="N4L-2x-ZdC"/>
+                            <constraint firstItem="3Yo-Av-vsc" firstAttribute="bottom" secondItem="Yd1-mF-XLB" secondAttribute="bottom" id="Nta-Gn-70q"/>
+                            <constraint firstItem="tLd-OG-rgl" firstAttribute="bottom" secondItem="nZw-1e-yMz" secondAttribute="bottom" id="NwX-jA-LLj"/>
+                            <constraint firstItem="Pil-vW-Xd8" firstAttribute="top" secondItem="O4h-2l-P5e" secondAttribute="bottom" constant="22" id="OSu-So-0qe"/>
+                            <constraint firstItem="mmr-xd-zar" firstAttribute="leading" secondItem="tLd-OG-rgl" secondAttribute="leading" id="P6z-8w-Imd"/>
+                            <constraint firstItem="tLd-OG-rgl" firstAttribute="top" secondItem="mmr-xd-zar" secondAttribute="bottom" constant="18" id="R6U-lI-laE"/>
+                            <constraint firstItem="mmr-xd-zar" firstAttribute="top" secondItem="I5Y-MC-bgG" secondAttribute="top" id="SXm-pu-eDA"/>
+                            <constraint firstItem="3Yo-Av-vsc" firstAttribute="top" secondItem="Yd1-mF-XLB" secondAttribute="top" id="TR7-3W-Ft6"/>
+                            <constraint firstItem="mmr-xd-zar" firstAttribute="bottom" secondItem="I5Y-MC-bgG" secondAttribute="bottom" id="TpW-rs-ajJ"/>
+                            <constraint firstItem="mmr-xd-zar" firstAttribute="leading" secondItem="pAR-Gw-8J0" secondAttribute="leading" constant="50" id="aDO-uD-jYi"/>
+                            <constraint firstItem="I5Y-MC-bgG" firstAttribute="top" secondItem="pAR-Gw-8J0" secondAttribute="top" constant="123" id="akV-cI-h1c"/>
+                            <constraint firstItem="PVu-sH-PjY" firstAttribute="top" secondItem="pAR-Gw-8J0" secondAttribute="top" constant="60" id="c92-II-HwG"/>
+                            <constraint firstItem="Pil-vW-Xd8" firstAttribute="centerX" secondItem="fA0-wb-2gc" secondAttribute="centerX" id="djx-Fd-fWM"/>
+                            <constraint firstItem="tLd-OG-rgl" firstAttribute="trailing" secondItem="3Yo-Av-vsc" secondAttribute="trailing" id="gWc-Sa-n6g"/>
+                            <constraint firstItem="tLd-OG-rgl" firstAttribute="leading" secondItem="3Yo-Av-vsc" secondAttribute="leading" id="h2e-E1-tdv"/>
+                            <constraint firstItem="pAR-Gw-8J0" firstAttribute="trailing" secondItem="PVu-sH-PjY" secondAttribute="trailing" constant="114" id="hk9-yC-vNA"/>
+                            <constraint firstItem="mmr-xd-zar" firstAttribute="trailing" secondItem="tLd-OG-rgl" secondAttribute="trailing" id="lfF-ma-LX8"/>
+                            <constraint firstItem="PVu-sH-PjY" firstAttribute="leading" secondItem="pAR-Gw-8J0" secondAttribute="leading" constant="26" id="mwr-nQ-fAq"/>
+                            <constraint firstItem="pAR-Gw-8J0" firstAttribute="bottom" secondItem="Pil-vW-Xd8" secondAttribute="bottom" constant="216" id="nXz-nc-XOj"/>
+                            <constraint firstItem="O4h-2l-P5e" firstAttribute="leading" secondItem="pAR-Gw-8J0" secondAttribute="leading" constant="27" id="oYe-wu-bLg"/>
+                            <constraint firstItem="I5Y-MC-bgG" firstAttribute="leading" secondItem="nZw-1e-yMz" secondAttribute="leading" id="qph-Yg-TsP"/>
+                            <constraint firstItem="O4h-2l-P5e" firstAttribute="leading" secondItem="Pil-vW-Xd8" secondAttribute="leading" id="rYq-zC-eHH"/>
+                            <constraint firstItem="nZw-1e-yMz" firstAttribute="leading" secondItem="Yd1-mF-XLB" secondAttribute="leading" id="upM-J1-4ll"/>
+                            <constraint firstItem="pAR-Gw-8J0" firstAttribute="trailing" secondItem="I5Y-MC-bgG" secondAttribute="trailing" constant="26" id="zoN-6y-IAa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pAR-Gw-8J0"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Controls" image="tabBar_controls" id="tUg-of-eZM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qPp-qP-VzV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="816.34182908545733"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="bn8-IN-CUC">
+            <objects>
+                <viewController id="uCF-9a-L6l" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gO4-HC-5Zn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Notifications" translatesAutoresizingMaskIntoConstraints="NO" id="ioI-Cd-Lgp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="821"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Notifications" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="VK0-4n-O51">
+                                <rect key="frame" x="28" y="80" width="235" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="32"/>
+                                <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="In-app push notificaiton settings." lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="OU7-pp-DZ6">
+                                <rect key="frame" x="28" y="125" width="271" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ApercuPro" family="Apercu Pro" pointSize="17"/>
+                                <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="2Zw-uT-AeE"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="tabBar_noti" id="5hK-gF-njJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bgP-qC-3mi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="1492.8035982008996"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Notifications" width="375" height="819"/>
+        <image name="arrow" width="10" height="16"/>
+        <image name="battery" width="24" height="14"/>
+        <image name="heat_icon" width="15" height="21"/>
+        <image name="home" width="750" height="1334"/>
+        <image name="profile" width="45" height="45"/>
+        <image name="roundedBtn" width="196" height="56"/>
+        <image name="sun" width="24" height="24"/>
+        <image name="tabBar_controls" width="22" height="21"/>
+        <image name="tabBar_home" width="28" height="24"/>
+        <image name="tabBar_noti" width="27" height="24"/>
+        <image name="tabBar_period" width="27" height="24"/>
+        <image name="temperature" width="11" height="24"/>
+    </resources>
+    <color key="tintColor" red="0.94901960780000005" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

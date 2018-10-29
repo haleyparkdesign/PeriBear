@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradientBall_blue" translatesAutoresizingMaskIntoConstraints="NO" id="dob-59-XfE">
+                                <rect key="frame" x="-115" y="422" width="310" height="310"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="310" id="C8I-3Y-Uo9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradientBall_red" translatesAutoresizingMaskIntoConstraints="NO" id="Mid-h5-3Yt">
+                                <rect key="frame" x="180" y="-55" width="310" height="310"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="310" id="6Iv-Uo-lmH"/>
+                                    <constraint firstAttribute="height" constant="310" id="7cK-Iu-1fk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Hello!  We hate periods too but we’ll help you make yours better." lineBreakMode="tailTruncation" numberOfLines="4" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T1u-bw-ZgU">
+                                <rect key="frame" x="31" y="221" width="313" height="173"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="173" id="f59-uZ-Ek1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="32"/>
+                                <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dob-59-XfE" secondAttribute="trailing" constant="180" id="2eI-fc-h7j"/>
+                            <constraint firstItem="dob-59-XfE" firstAttribute="top" secondItem="T1u-bw-ZgU" secondAttribute="bottom" constant="28" id="4Ov-3C-RJu"/>
+                            <constraint firstItem="T1u-bw-ZgU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7QS-BV-Aof"/>
+                            <constraint firstItem="Mid-h5-3Yt" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-75" id="Cr9-9J-Ph9"/>
+                            <constraint firstItem="T1u-bw-ZgU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="Mxp-6z-CwE"/>
+                            <constraint firstItem="T1u-bw-ZgU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="201" id="Q66-Bd-Gte"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="dob-59-XfE" secondAttribute="bottom" constant="-65" id="YEg-Fy-EKd"/>
+                            <constraint firstItem="Mid-h5-3Yt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="180" id="sJV-ri-tLY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gradientBall_blue" width="660" height="660"/>
+        <image name="gradientBall_red" width="692" height="642"/>
+    </resources>
+</document>

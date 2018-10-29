@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE3A11AA217F29290026CD32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A11A9217F29290026CD32 /* AppDelegate.swift */; };
+		CE3A11AC217F29290026CD32 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A11AB217F29290026CD32 /* FirstViewController.swift */; };
+		CE3A11AE217F29290026CD32 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A11AD217F29290026CD32 /* SecondViewController.swift */; };
+		CE3A11B1217F29290026CD32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3A11AF217F29290026CD32 /* Main.storyboard */; };
+		CE3A11B3217F292A0026CD32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3A11B2217F292A0026CD32 /* Assets.xcassets */; };
+		CE3A11B6217F292A0026CD32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3A11B4217F292A0026CD32 /* LaunchScreen.storyboard */; };
+		CE3A11C1217F292B0026CD32 /* PeriBearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A11C0217F292B0026CD32 /* PeriBearTests.swift */; };
+		CE3A11CC217F292B0026CD32 /* PeriBearUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A11CB217F292B0026CD32 /* PeriBearUITests.swift */; };
+		CEC4E0002186B0AE00F35ACC /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC4DFFF2186B0AE00F35ACC /* RoundButton.swift */; };
+		CEC4E0052186E13000F35ACC /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = CEC4E0032186E11700F35ACC /* fonts */; };
+		CEC4E0062186E13300F35ACC /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = CEC4E0032186E11700F35ACC /* fonts */; };
+		CEC4E0072186E13300F35ACC /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = CEC4E0032186E11700F35ACC /* fonts */; };
+		CEC4E00B2186E19800F35ACC /* apercu_regular_pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEC4E0082186E19800F35ACC /* apercu_regular_pro.otf */; };
+		CEC4E00C2186E19800F35ACC /* apercu_medium_pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEC4E0092186E19800F35ACC /* apercu_medium_pro.otf */; };
+		CEC4E00D2186E19800F35ACC /* apercu_bold_pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEC4E00A2186E19800F35ACC /* apercu_bold_pro.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE3A11BD217F292B0026CD32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE3A119E217F29280026CD32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE3A11A5217F29290026CD32;
+			remoteInfo = PeriBear;
+		};
+		CE3A11C8217F292B0026CD32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE3A119E217F29280026CD32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE3A11A5217F29290026CD32;
+			remoteInfo = PeriBear;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE3A11A6217F29290026CD32 /* PeriBear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeriBear.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3A11A9217F29290026CD32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE3A11AB217F29290026CD32 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		CE3A11AD217F29290026CD32 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		CE3A11B0217F29290026CD32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE3A11B2217F292A0026CD32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE3A11B5217F292A0026CD32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE3A11B7217F292A0026CD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3A11BC217F292B0026CD32 /* PeriBearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeriBearTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3A11C0217F292B0026CD32 /* PeriBearTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriBearTests.swift; sourceTree = "<group>"; };
+		CE3A11C2217F292B0026CD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3A11C7217F292B0026CD32 /* PeriBearUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeriBearUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3A11CB217F292B0026CD32 /* PeriBearUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriBearUITests.swift; sourceTree = "<group>"; };
+		CE3A11CD217F292B0026CD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC4DFFF2186B0AE00F35ACC /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		CEC4E0032186E11700F35ACC /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
+		CEC4E0082186E19800F35ACC /* apercu_regular_pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = apercu_regular_pro.otf; path = PeriBear/fonts/apercu_regular_pro.otf; sourceTree = "<group>"; };
+		CEC4E0092186E19800F35ACC /* apercu_medium_pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = apercu_medium_pro.otf; path = PeriBear/fonts/apercu_medium_pro.otf; sourceTree = "<group>"; };
+		CEC4E00A2186E19800F35ACC /* apercu_bold_pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = apercu_bold_pro.otf; path = PeriBear/fonts/apercu_bold_pro.otf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE3A11A3217F29290026CD32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3A11B9217F292B0026CD32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3A11C4217F292B0026CD32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE3A119D217F29280026CD32 = {
+			isa = PBXGroup;
+			children = (
+				CEC4E00A2186E19800F35ACC /* apercu_bold_pro.otf */,
+				CEC4E0092186E19800F35ACC /* apercu_medium_pro.otf */,
+				CEC4E0082186E19800F35ACC /* apercu_regular_pro.otf */,
+				CE3A11A8217F29290026CD32 /* PeriBear */,
+				CE3A11BF217F292B0026CD32 /* PeriBearTests */,
+				CE3A11CA217F292B0026CD32 /* PeriBearUITests */,
+				CE3A11A7217F29290026CD32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE3A11A7217F29290026CD32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE3A11A6217F29290026CD32 /* PeriBear.app */,
+				CE3A11BC217F292B0026CD32 /* PeriBearTests.xctest */,
+				CE3A11C7217F292B0026CD32 /* PeriBearUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE3A11A8217F29290026CD32 /* PeriBear */ = {
+			isa = PBXGroup;
+			children = (
+				CEC4E0032186E11700F35ACC /* fonts */,
+				CE3A11A9217F29290026CD32 /* AppDelegate.swift */,
+				CE3A11AB217F29290026CD32 /* FirstViewController.swift */,
+				CE3A11AD217F29290026CD32 /* SecondViewController.swift */,
+				CE3A11AF217F29290026CD32 /* Main.storyboard */,
+				CEC4DFFF2186B0AE00F35ACC /* RoundButton.swift */,
+				CE3A11B2217F292A0026CD32 /* Assets.xcassets */,
+				CE3A11B4217F292A0026CD32 /* LaunchScreen.storyboard */,
+				CE3A11B7217F292A0026CD32 /* Info.plist */,
+			);
+			path = PeriBear;
+			sourceTree = "<group>";
+		};
+		CE3A11BF217F292B0026CD32 /* PeriBearTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE3A11C0217F292B0026CD32 /* PeriBearTests.swift */,
+				CE3A11C2217F292B0026CD32 /* Info.plist */,
+			);
+			path = PeriBearTests;
+			sourceTree = "<group>";
+		};
+		CE3A11CA217F292B0026CD32 /* PeriBearUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE3A11CD217F292B0026CD32 /* Info.plist */,
+				CE3A11CB217F292B0026CD32 /* PeriBearUITests.swift */,
+			);
+			path = PeriBearUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE3A11A5217F29290026CD32 /* PeriBear */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE3A11D0217F292B0026CD32 /* Build configuration list for PBXNativeTarget "PeriBear" */;
+			buildPhases = (
+				CE3A11A2217F29290026CD32 /* Sources */,
+				CE3A11A3217F29290026CD32 /* Frameworks */,
+				CE3A11A4217F29290026CD32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeriBear;
+			productName = PeriBear;
+			productReference = CE3A11A6217F29290026CD32 /* PeriBear.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE3A11BB217F292B0026CD32 /* PeriBearTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE3A11D3217F292B0026CD32 /* Build configuration list for PBXNativeTarget "PeriBearTests" */;
+			buildPhases = (
+				CE3A11B8217F292B0026CD32 /* Sources */,
+				CE3A11B9217F292B0026CD32 /* Frameworks */,
+				CE3A11BA217F292B0026CD32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE3A11BE217F292B0026CD32 /* PBXTargetDependency */,
+			);
+			name = PeriBearTests;
+			productName = PeriBearTests;
+			productReference = CE3A11BC217F292B0026CD32 /* PeriBearTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE3A11C6217F292B0026CD32 /* PeriBearUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE3A11D6217F292B0026CD32 /* Build configuration list for PBXNativeTarget "PeriBearUITests" */;
+			buildPhases = (
+				CE3A11C3217F292B0026CD32 /* Sources */,
+				CE3A11C4217F292B0026CD32 /* Frameworks */,
+				CE3A11C5217F292B0026CD32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE3A11C9217F292B0026CD32 /* PBXTargetDependency */,
+			);
+			name = PeriBearUITests;
+			productName = PeriBearUITests;
+			productReference = CE3A11C7217F292B0026CD32 /* PeriBearUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE3A119E217F29280026CD32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Hyojeong Park";
+				TargetAttributes = {
+					CE3A11A5217F29290026CD32 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					CE3A11BB217F292B0026CD32 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = CE3A11A5217F29290026CD32;
+					};
+					CE3A11C6217F292B0026CD32 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = CE3A11A5217F29290026CD32;
+					};
+				};
+			};
+			buildConfigurationList = CE3A11A1217F29280026CD32 /* Build configuration list for PBXProject "PeriBear" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE3A119D217F29280026CD32;
+			productRefGroup = CE3A11A7217F29290026CD32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE3A11A5217F29290026CD32 /* PeriBear */,
+				CE3A11BB217F292B0026CD32 /* PeriBearTests */,
+				CE3A11C6217F292B0026CD32 /* PeriBearUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE3A11A4217F29290026CD32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC4E00B2186E19800F35ACC /* apercu_regular_pro.otf in Resources */,
+				CEC4E00C2186E19800F35ACC /* apercu_medium_pro.otf in Resources */,
+				CEC4E00D2186E19800F35ACC /* apercu_bold_pro.otf in Resources */,
+				CE3A11B6217F292A0026CD32 /* LaunchScreen.storyboard in Resources */,
+				CEC4E0052186E13000F35ACC /* fonts in Resources */,
+				CE3A11B3217F292A0026CD32 /* Assets.xcassets in Resources */,
+				CE3A11B1217F29290026CD32 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3A11BA217F292B0026CD32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC4E0062186E13300F35ACC /* fonts in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3A11C5217F292B0026CD32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC4E0072186E13300F35ACC /* fonts in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE3A11A2217F29290026CD32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC4E0002186B0AE00F35ACC /* RoundButton.swift in Sources */,
+				CE3A11AE217F29290026CD32 /* SecondViewController.swift in Sources */,
+				CE3A11AA217F29290026CD32 /* AppDelegate.swift in Sources */,
+				CE3A11AC217F29290026CD32 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3A11B8217F292B0026CD32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3A11C1217F292B0026CD32 /* PeriBearTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3A11C3217F292B0026CD32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3A11CC217F292B0026CD32 /* PeriBearUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE3A11BE217F292B0026CD32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE3A11A5217F29290026CD32 /* PeriBear */;
+			targetProxy = CE3A11BD217F292B0026CD32 /* PBXContainerItemProxy */;
+		};
+		CE3A11C9217F292B0026CD32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE3A11A5217F29290026CD32 /* PeriBear */;
+			targetProxy = CE3A11C8217F292B0026CD32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE3A11AF217F29290026CD32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE3A11B0217F29290026CD32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE3A11B4217F292A0026CD32 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE3A11B5217F292A0026CD32 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE3A11CE217F292B0026CD32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE3A11CF217F292B0026CD32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE3A11D1217F292B0026CD32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeriBear/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OOP2018.PeriBear;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE3A11D2217F292B0026CD32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeriBear/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OOP2018.PeriBear;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE3A11D4217F292B0026CD32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeriBearTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OOP2018.PeriBearTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeriBear.app/PeriBear";
+			};
+			name = Debug;
+		};
+		CE3A11D5217F292B0026CD32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeriBearTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OOP2018.PeriBearTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeriBear.app/PeriBear";
+			};
+			name = Release;
+		};
+		CE3A11D7217F292B0026CD32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeriBearUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OOP2018.PeriBearUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeriBear;
+			};
+			name = Debug;
+		};
+		CE3A11D8217F292B0026CD32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeriBearUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OOP2018.PeriBearUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeriBear;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE3A11A1217F29280026CD32 /* Build configuration list for PBXProject "PeriBear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3A11CE217F292B0026CD32 /* Debug */,
+				CE3A11CF217F292B0026CD32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE3A11D0217F292B0026CD32 /* Build configuration list for PBXNativeTarget "PeriBear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3A11D1217F292B0026CD32 /* Debug */,
+				CE3A11D2217F292B0026CD32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE3A11D3217F292B0026CD32 /* Build configuration list for PBXNativeTarget "PeriBearTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3A11D4217F292B0026CD32 /* Debug */,
+				CE3A11D5217F292B0026CD32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE3A11D6217F292B0026CD32 /* Build configuration list for PBXNativeTarget "PeriBearUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3A11D7217F292B0026CD32 /* Debug */,
+				CE3A11D8217F292B0026CD32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE3A119E217F29280026CD32 /* Project object */;
+}
