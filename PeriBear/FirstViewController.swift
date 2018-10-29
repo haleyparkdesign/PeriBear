@@ -13,15 +13,19 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    func lineDraw(viewLi:UIView) {
-        let border = CALayer()
-        let width = CGFloat(1.0)
-        border.borderColor = UIColor(red: 197/255, green: 197/255, blue: 197/255, alpha: 1.0).cgColor
-        border.frame = CGRect(x: 0, y: viewLi.frame.size.height - width, width:  viewLi.frame.size.width, height: viewLi.frame.size.height)
-        border.borderWidth = width
-        viewLi.layer.addSublayer(border)
-        viewLi.layer.masksToBounds = true
-    }
+    
+    let onColor  = _your_on_state_color
+    let offColor = _your_off_state_color
+    
+    let mSwitch = UISwitch(frame: CGRectZero)
+    mSwitch.on = true
+    
+    /*For on state*/
+    mSwitch.onTintColor = onColor
+    
+    /*For off state*/
+    mSwitch.tintColor = offColor
+    mSwitch.layer.cornerRadius = mSwitch.frame.height / 2
+    mSwitch.backgroundColor = offColor
 }
 

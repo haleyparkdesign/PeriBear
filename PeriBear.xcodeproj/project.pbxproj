@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CE3A11AA217F29290026CD32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A11A9217F29290026CD32 /* AppDelegate.swift */; };
-		CE3A11AC217F29290026CD32 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A11AB217F29290026CD32 /* FirstViewController.swift */; };
-		CE3A11AE217F29290026CD32 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A11AD217F29290026CD32 /* SecondViewController.swift */; };
 		CE3A11B1217F29290026CD32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3A11AF217F29290026CD32 /* Main.storyboard */; };
 		CE3A11B3217F292A0026CD32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3A11B2217F292A0026CD32 /* Assets.xcassets */; };
 		CE3A11B6217F292A0026CD32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3A11B4217F292A0026CD32 /* LaunchScreen.storyboard */; };
@@ -22,6 +20,9 @@
 		CEC4E00B2186E19800F35ACC /* apercu_regular_pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEC4E0082186E19800F35ACC /* apercu_regular_pro.otf */; };
 		CEC4E00C2186E19800F35ACC /* apercu_medium_pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEC4E0092186E19800F35ACC /* apercu_medium_pro.otf */; };
 		CEC4E00D2186E19800F35ACC /* apercu_bold_pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEC4E00A2186E19800F35ACC /* apercu_bold_pro.otf */; };
+		CEC6355D21870E8700CD647C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6355C21870E8700CD647C /* ViewController.swift */; };
+		CEC6356721873F6800CD647C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6356621873F6800CD647C /* CustomTextField.swift */; };
+		CEC6356B218743D600CD647C /* TooltipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6356A218743D600CD647C /* TooltipView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +45,6 @@
 /* Begin PBXFileReference section */
 		CE3A11A6217F29290026CD32 /* PeriBear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeriBear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3A11A9217F29290026CD32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE3A11AB217F29290026CD32 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		CE3A11AD217F29290026CD32 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		CE3A11B0217F29290026CD32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE3A11B2217F292A0026CD32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE3A11B5217F292A0026CD32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +60,9 @@
 		CEC4E0082186E19800F35ACC /* apercu_regular_pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = apercu_regular_pro.otf; path = PeriBear/fonts/apercu_regular_pro.otf; sourceTree = "<group>"; };
 		CEC4E0092186E19800F35ACC /* apercu_medium_pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = apercu_medium_pro.otf; path = PeriBear/fonts/apercu_medium_pro.otf; sourceTree = "<group>"; };
 		CEC4E00A2186E19800F35ACC /* apercu_bold_pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = apercu_bold_pro.otf; path = PeriBear/fonts/apercu_bold_pro.otf; sourceTree = "<group>"; };
+		CEC6355C21870E8700CD647C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEC6356621873F6800CD647C /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		CEC6356A218743D600CD647C /* TooltipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,13 +118,14 @@
 			children = (
 				CEC4E0032186E11700F35ACC /* fonts */,
 				CE3A11A9217F29290026CD32 /* AppDelegate.swift */,
-				CE3A11AB217F29290026CD32 /* FirstViewController.swift */,
-				CE3A11AD217F29290026CD32 /* SecondViewController.swift */,
 				CE3A11AF217F29290026CD32 /* Main.storyboard */,
+				CEC6355C21870E8700CD647C /* ViewController.swift */,
 				CEC4DFFF2186B0AE00F35ACC /* RoundButton.swift */,
 				CE3A11B2217F292A0026CD32 /* Assets.xcassets */,
 				CE3A11B4217F292A0026CD32 /* LaunchScreen.storyboard */,
 				CE3A11B7217F292A0026CD32 /* Info.plist */,
+				CEC6356621873F6800CD647C /* CustomTextField.swift */,
+				CEC6356A218743D600CD647C /* TooltipView.swift */,
 			);
 			path = PeriBear;
 			sourceTree = "<group>";
@@ -282,10 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC6356721873F6800CD647C /* CustomTextField.swift in Sources */,
+				CEC6356B218743D600CD647C /* TooltipView.swift in Sources */,
+				CEC6355D21870E8700CD647C /* ViewController.swift in Sources */,
 				CEC4E0002186B0AE00F35ACC /* RoundButton.swift in Sources */,
-				CE3A11AE217F29290026CD32 /* SecondViewController.swift in Sources */,
 				CE3A11AA217F29290026CD32 /* AppDelegate.swift in Sources */,
-				CE3A11AC217F29290026CD32 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
