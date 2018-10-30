@@ -13,7 +13,10 @@
 		CE3A11B6217F292A0026CD32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3A11B4217F292A0026CD32 /* LaunchScreen.storyboard */; };
 		CE3A11C1217F292B0026CD32 /* PeriBearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A11C0217F292B0026CD32 /* PeriBearTests.swift */; };
 		CE3A11CC217F292B0026CD32 /* PeriBearUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A11CB217F292B0026CD32 /* PeriBearUITests.swift */; };
-		CE5FD7772188369100ACDDD1 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5FD7762188369100ACDDD1 /* CustomSegmentedControl.swift */; };
+		CE3F57C32188B2BD001781E9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F57C22188B2BD001781E9 /* SecondViewController.swift */; };
+		CE3F57C52188B2CB001781E9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F57C42188B2CA001781E9 /* FirstViewController.swift */; };
+		CE564B062188BE5D00DE61EA /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE564B052188BE5D00DE61EA /* FourthViewController.swift */; };
+		CEB60C9D2188A9E80022D27F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB60C9C2188A9E80022D27F /* ThirdViewController.swift */; };
 		CEC3FE5A21886FC7003620CE /* XMSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC3FE5921886FC7003620CE /* XMSegmentedControl.swift */; };
 		CEC4E0002186B0AE00F35ACC /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC4DFFF2186B0AE00F35ACC /* RoundButton.swift */; };
 		CEC4E0052186E13000F35ACC /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = CEC4E0032186E11700F35ACC /* fonts */; };
@@ -22,8 +25,6 @@
 		CEC4E00B2186E19800F35ACC /* apercu_regular_pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEC4E0082186E19800F35ACC /* apercu_regular_pro.otf */; };
 		CEC4E00C2186E19800F35ACC /* apercu_medium_pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEC4E0092186E19800F35ACC /* apercu_medium_pro.otf */; };
 		CEC4E00D2186E19800F35ACC /* apercu_bold_pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEC4E00A2186E19800F35ACC /* apercu_bold_pro.otf */; };
-		CEC6355D21870E8700CD647C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6355C21870E8700CD647C /* ViewController.swift */; };
-		CEC6356721873F6800CD647C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6356621873F6800CD647C /* CustomTextField.swift */; };
 		CEC6356B218743D600CD647C /* TooltipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6356A218743D600CD647C /* TooltipView.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,15 +58,16 @@
 		CE3A11C7217F292B0026CD32 /* PeriBearUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeriBearUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3A11CB217F292B0026CD32 /* PeriBearUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriBearUITests.swift; sourceTree = "<group>"; };
 		CE3A11CD217F292B0026CD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE5FD7762188369100ACDDD1 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		CE3F57C22188B2BD001781E9 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		CE3F57C42188B2CA001781E9 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		CE564B052188BE5D00DE61EA /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		CEB60C9C2188A9E80022D27F /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		CEC3FE5921886FC7003620CE /* XMSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMSegmentedControl.swift; sourceTree = "<group>"; };
 		CEC4DFFF2186B0AE00F35ACC /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		CEC4E0032186E11700F35ACC /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		CEC4E0082186E19800F35ACC /* apercu_regular_pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = apercu_regular_pro.otf; path = PeriBear/fonts/apercu_regular_pro.otf; sourceTree = "<group>"; };
 		CEC4E0092186E19800F35ACC /* apercu_medium_pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = apercu_medium_pro.otf; path = PeriBear/fonts/apercu_medium_pro.otf; sourceTree = "<group>"; };
 		CEC4E00A2186E19800F35ACC /* apercu_bold_pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = apercu_bold_pro.otf; path = PeriBear/fonts/apercu_bold_pro.otf; sourceTree = "<group>"; };
-		CEC6355C21870E8700CD647C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CEC6356621873F6800CD647C /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		CEC6356A218743D600CD647C /* TooltipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,17 +123,18 @@
 			isa = PBXGroup;
 			children = (
 				CEC4E0032186E11700F35ACC /* fonts */,
-				CE3A11A9217F29290026CD32 /* AppDelegate.swift */,
+				CE3F57C42188B2CA001781E9 /* FirstViewController.swift */,
+				CE3F57C22188B2BD001781E9 /* SecondViewController.swift */,
+				CEB60C9C2188A9E80022D27F /* ThirdViewController.swift */,
+				CE564B052188BE5D00DE61EA /* FourthViewController.swift */,
 				CE3A11AF217F29290026CD32 /* Main.storyboard */,
-				CEC3FE5921886FC7003620CE /* XMSegmentedControl.swift */,
-				CEC6355C21870E8700CD647C /* ViewController.swift */,
-				CE5FD7762188369100ACDDD1 /* CustomSegmentedControl.swift */,
-				CEC4DFFF2186B0AE00F35ACC /* RoundButton.swift */,
-				CE3A11B2217F292A0026CD32 /* Assets.xcassets */,
 				CE3A11B4217F292A0026CD32 /* LaunchScreen.storyboard */,
+				CE3A11B2217F292A0026CD32 /* Assets.xcassets */,
 				CE3A11B7217F292A0026CD32 /* Info.plist */,
-				CEC6356621873F6800CD647C /* CustomTextField.swift */,
+				CEC4DFFF2186B0AE00F35ACC /* RoundButton.swift */,
 				CEC6356A218743D600CD647C /* TooltipView.swift */,
+				CE3A11A9217F29290026CD32 /* AppDelegate.swift */,
+				CEC3FE5921886FC7003620CE /* XMSegmentedControl.swift */,
 			);
 			path = PeriBear;
 			sourceTree = "<group>";
@@ -291,13 +294,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEC6356721873F6800CD647C /* CustomTextField.swift in Sources */,
+				CE3F57C32188B2BD001781E9 /* SecondViewController.swift in Sources */,
 				CEC3FE5A21886FC7003620CE /* XMSegmentedControl.swift in Sources */,
 				CEC6356B218743D600CD647C /* TooltipView.swift in Sources */,
-				CEC6355D21870E8700CD647C /* ViewController.swift in Sources */,
 				CEC4E0002186B0AE00F35ACC /* RoundButton.swift in Sources */,
+				CE564B062188BE5D00DE61EA /* FourthViewController.swift in Sources */,
+				CEB60C9D2188A9E80022D27F /* ThirdViewController.swift in Sources */,
 				CE3A11AA217F29290026CD32 /* AppDelegate.swift in Sources */,
-				CE5FD7772188369100ACDDD1 /* CustomSegmentedControl.swift in Sources */,
+				CE3F57C52188B2CB001781E9 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

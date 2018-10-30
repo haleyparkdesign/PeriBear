@@ -29,22 +29,22 @@ class TooltipView: UIView {
     
     //MARK: - IBInspectable
     @IBInspectable var arrowTopLeft: Bool = false
-    @IBInspectable var arrowTopCenter: Bool = true
+    @IBInspectable var arrowTopCenter: Bool = false
     @IBInspectable var arrowTopRight: Bool = false
     @IBInspectable var arrowBottomLeft: Bool = false
-    @IBInspectable var arrowBottomCenter: Bool = false
+    @IBInspectable var arrowBottomCenter: Bool = true
     @IBInspectable var arrowBottomRight: Bool = false
     
-    @IBInspectable var fillColor: UIColor = UIColor.white
+    @IBInspectable var fillColor: UIColor = UIColor(red: 250/255, green: 250/255, blue: 253/255, alpha: 1.0)
     
-    @IBInspectable var borderColor: UIColor = UIColor(red:0, green:0, blue:0, alpha:0.05)
-    @IBInspectable var borderRadius: CGFloat = 18
+    @IBInspectable var borderColor: UIColor = UIColor(red:233/255, green:233/255, blue:235/255, alpha:0.7)
+    @IBInspectable var borderRadius: CGFloat = 5
     @IBInspectable var borderWidth: CGFloat = 1
     
-    @IBInspectable var shadowColor: UIColor = UIColor(red:0, green:0, blue:0, alpha:0.14)
+    @IBInspectable var shadowColor: UIColor = UIColor(red:196/255, green:197/255, blue:204/255, alpha:1.0)
     @IBInspectable var shadowOffsetX: CGFloat = 0
     @IBInspectable var shadowOffsetY: CGFloat = 2
-    @IBInspectable var shadowBlur: CGFloat = 10
+    @IBInspectable var shadowBlur: CGFloat = 3
     
     //MARK: - Global Variables
     var tooltipWidth = 0
