@@ -9,8 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var temperatureToolTip: TooltipView!
+    @IBOutlet weak var temperatureToolTipText: UILabel!
+    @IBOutlet weak var heatSlider: UISlider!
+    @IBAction func heatSliderChanged(_ sender: Any) {
+        // set text value
+        var value = heatSlider.value
+        value *= 100
+        let intValue = Int(value.rounded())
+        temperatureToolTipText.text = "\(intValue)" + "°C"
+        
+        // move the tooltip with the slider
+        temperatureToolTip.center.x = heatSlider.thumbCenterX
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+}
+
+// get UISlider thumb position
+extension UISlider {
+    var thumbCenterX: CGFloat {
+        let trackRect = self.trackRect(forBounds: frame)
+        let thumbRect = self.thumbRect(forBounds: bounds, trackRect: trackRect, value: value)
+        return thumbRect.midX
     }
 }

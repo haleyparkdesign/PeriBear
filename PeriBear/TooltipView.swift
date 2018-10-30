@@ -21,13 +21,13 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
+
 import UIKit
 
 @IBDesignable
 class TooltipView: UIView {
     
     //MARK: - IBInspectable
-    
     @IBInspectable var arrowTopLeft: Bool = false
     @IBInspectable var arrowTopCenter: Bool = true
     @IBInspectable var arrowTopRight: Bool = false
@@ -47,12 +47,10 @@ class TooltipView: UIView {
     @IBInspectable var shadowBlur: CGFloat = 10
     
     //MARK: - Global Variables
-    
     var tooltipWidth = 0
     var tooltipHeight = 0
     
     //MARK: - Initialization
-    
     override func draw(_ rect: CGRect) {
         drawTooltip()
     }
@@ -60,7 +58,6 @@ class TooltipView: UIView {
     //MARK: - Private Methods
     
     // Orientation methods
-    
     private func topLeft(_ x: CGFloat, _ y: CGFloat) -> CGPoint {
         return CGPoint(x: x, y: y)
     }

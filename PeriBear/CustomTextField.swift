@@ -16,10 +16,10 @@ class CustomTextField : UITextField {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.layer.cornerRadius = 5.0
-
+        
         self.layer.borderWidth = 0
         self.backgroundColor = gray0
-//        self.tintColor = UIColor(red: <#T##CGFloat#>, green: <#T##CGFloat#>, blue: <#T##CGFloat#>, alpha: <#T##CGFloat#>)
+        //        self.tintColor = UIColor(red: <#T##CGFloat#>, green: <#T##CGFloat#>, blue: <#T##CGFloat#>, alpha: <#T##CGFloat#>)
         
         self.layer.shadowOffset = CGSize(width: 3.0, height: 2.0)
         self.layer.shadowColor = gray1.cgColor
