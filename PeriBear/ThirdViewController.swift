@@ -16,19 +16,13 @@ class ThirdViewController: UIViewController {
         // set text value*
         let intValue = Int(heatSlider.value.rounded())
         
-        if (value == 0) {
-            toolTip.isHidden = true
-        } else {
-            toolTip.isHidden = false
-            toolTipText.text = "\(intValue)" + "°C"
-            // move the tooltip with the slider*
-            toolTip.center.x = heatSlider.thumbCenterX
-        }
+        toolTipText.text = "\(intValue)" + "°C"
+        // move the tooltip with the slider*
+        toolTip.center.x = heatSlider.thumbCenterX
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        toolTip.isHidden = true
     }
 }
 
