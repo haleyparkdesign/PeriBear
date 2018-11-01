@@ -19,7 +19,7 @@ class SecondViewController: UIViewController {
     
     // toggles between two views
     @IBAction func CalendarBtnTapped(_ sender: Any) {
-        UIView.animate(withDuration: 0.15, delay: 0, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 0.1, delay: 0, options: .curveEaseOut, animations: {
             self.TintedUnderline.frame.origin.x = UIScreen.main.bounds.width / 2
         }, completion: { finished in
         })
@@ -28,7 +28,7 @@ class SecondViewController: UIViewController {
         CycleHistoryBtn.titleLabel?.font =  UIFont(name: "ApercuPro", size: 18)
     }
     @IBAction func CycleHistoryBtnTapped(_ sender: Any) {
-        UIView.animate(withDuration: 0.15, delay: 0, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 0.1, delay: 0, options: .curveEaseOut, animations: {
             self.TintedUnderline.frame.origin.x = 0
         }, completion: { finished in
         })
