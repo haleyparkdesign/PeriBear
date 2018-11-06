@@ -48,6 +48,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CEB2BA6A21919CD6004E6DC3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		03552885C968F2044E8032F8 /* Pods_PeriBearUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeriBearUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E2C64AD0B4E8A4A6C15F5B /* Pods-PeriBearTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeriBearTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PeriBearTests/Pods-PeriBearTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -209,6 +222,7 @@
 				CE3A11A3217F29290026CD32 /* Frameworks */,
 				CE3A11A4217F29290026CD32 /* Resources */,
 				72952126ACD03BE262D91C9C /* [CP] Embed Pods Frameworks */,
+				CEB2BA6A21919CD6004E6DC3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -269,6 +283,11 @@
 				TargetAttributes = {
 					CE3A11A5217F29290026CD32 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					CE3A11BB217F292B0026CD32 = {
 						CreatedOnToolsVersion = 10.0;
