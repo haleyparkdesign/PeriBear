@@ -1,0 +1,6 @@
+framework module Pods_PeriBearTests {
+  umbrella header "Pods-PeriBearTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

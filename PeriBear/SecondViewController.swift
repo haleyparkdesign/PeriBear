@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FSCalendar
 
 var cycle = 28
 var duaration = 5
@@ -16,6 +17,10 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var CycleHistoryBtn: UIButton!
     @IBOutlet weak var CalendarBtn: UIButton!
     @IBOutlet weak var TintedUnderline: UIView!
+    @IBOutlet weak var HistoryView: UIView!
+    @IBOutlet weak var CalendarView: FSCalendar!
+    @IBOutlet weak var TodayButton: UIButton!
+    @IBOutlet weak var OvulationButton: UIButton!
     
     // toggles between two views
     @IBAction func CalendarBtnTapped(_ sender: Any) {
@@ -24,8 +29,11 @@ class SecondViewController: UIViewController {
         }, completion: { finished in
         })
         
-        CalendarBtn.titleLabel?.font =  UIFont(name: "ApercuPro-Bold", size: 18)
+        CalendarBtn.titleLabel?.font =  UIFont(name: "ApercuPro-Medium", size: 18)
         CycleHistoryBtn.titleLabel?.font =  UIFont(name: "ApercuPro", size: 18)
+        
+        HistoryView.isHidden = true
+        CalendarView.isHidden = false
     }
     @IBAction func CycleHistoryBtnTapped(_ sender: Any) {
         UIView.animate(withDuration: 0.1, delay: 0, options: .curveEaseOut, animations: {
@@ -35,11 +43,17 @@ class SecondViewController: UIViewController {
         
         CycleHistoryBtn.titleLabel?.font =  UIFont(name: "ApercuPro-Bold", size: 18)
         CalendarBtn.titleLabel?.font =  UIFont(name: "ApercuPro", size: 18)
+        HistoryView.isHidden = false
+        CalendarView.isHidden = true
+    }
+    @IBAction func TodayTapped(_ sender: Any) {
+        CalendarView.setCurrentPage(Date(), animated: true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        CalendarView.isHidden = true
     }
 }
 
@@ -52,23 +66,5 @@ extension UIView {
         set {
             layer.cornerRadius = newValue
         }
-    }
-}
-
-extension UIView {
-    func animateTo(frame: CGRect, withDuration duration: TimeInterval, completion: ((Bool) -> Void)? = nil) {
-        guard let _ = superview else {
-            return
-        }
-        
-        let xScale = frame.size.width / self.frame.size.width
-        let yScale = frame.size.height / self.frame.size.height
-        let x = frame.origin.x + (self.frame.width * xScale) * self.layer.anchorPoint.x
-        let y = frame.origin.y + (self.frame.height * yScale) * self.layer.anchorPoint.y
-        
-        UIView.animate(withDuration: duration, delay: 0, options: .curveLinear, animations: {
-            self.layer.position = CGPoint(x: x, y: y)
-            self.transform = self.transform.scaledBy(x: xScale, y: yScale)
-        }, completion: completion)
     }
 }
