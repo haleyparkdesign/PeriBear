@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3AE76423789781F292548055 /* Pods_PeriBearUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03552885C968F2044E8032F8 /* Pods_PeriBearUITests.framework */; };
+		CE1B2472219EA5370001FFFE /* BluetoothSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2471219EA5370001FFFE /* BluetoothSerial.swift */; };
 		CE3A11AA217F29290026CD32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A11A9217F29290026CD32 /* AppDelegate.swift */; };
 		CE3A11B1217F29290026CD32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3A11AF217F29290026CD32 /* Main.storyboard */; };
 		CE3A11B3217F292A0026CD32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3A11B2217F292A0026CD32 /* Assets.xcassets */; };
@@ -18,8 +19,9 @@
 		CE3F57C52188B2CB001781E9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F57C42188B2CA001781E9 /* FirstViewController.swift */; };
 		CE564B062188BE5D00DE61EA /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE564B052188BE5D00DE61EA /* FourthViewController.swift */; };
 		CE87A6A72195F0F10053EAD0 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87A6A62195F0F10053EAD0 /* FifthViewController.swift */; };
+		CE87A6A92195F7F00053EAD0 /* SimpleBluetoothIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87A6A82195F7F00053EAD0 /* SimpleBluetoothIO.swift */; };
+		CE87A6AB2195F8250053EAD0 /* NSData+Int8.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87A6AA2195F8250053EAD0 /* NSData+Int8.swift */; };
 		CEB60C9D2188A9E80022D27F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB60C9C2188A9E80022D27F /* ThirdViewController.swift */; };
-		CEC3FE5A21886FC7003620CE /* XMSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC3FE5921886FC7003620CE /* XMSegmentedControl.swift */; };
 		CEC4E0002186B0AE00F35ACC /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC4DFFF2186B0AE00F35ACC /* RoundButton.swift */; };
 		CEC4E0052186E13000F35ACC /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = CEC4E0032186E11700F35ACC /* fonts */; };
 		CEC4E0062186E13300F35ACC /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = CEC4E0032186E11700F35ACC /* fonts */; };
@@ -72,6 +74,7 @@
 		5ECB54750C274E22347CA098 /* Pods-PeriBear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeriBear.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PeriBear/Pods-PeriBear.debug.xcconfig"; sourceTree = "<group>"; };
 		63CB29FE9F96A1D3819C7405 /* Pods_PeriBearTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeriBearTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		816F5BA566FBFB6F30A2C9AA /* Pods-PeriBearUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeriBearUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PeriBearUITests/Pods-PeriBearUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CE1B2471219EA5370001FFFE /* BluetoothSerial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothSerial.swift; sourceTree = "<group>"; };
 		CE3A11A6217F29290026CD32 /* PeriBear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeriBear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3A11A9217F29290026CD32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE3A11B0217F29290026CD32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,8 +91,9 @@
 		CE3F57C42188B2CA001781E9 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		CE564B052188BE5D00DE61EA /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		CE87A6A62195F0F10053EAD0 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		CE87A6A82195F7F00053EAD0 /* SimpleBluetoothIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBluetoothIO.swift; sourceTree = "<group>"; };
+		CE87A6AA2195F8250053EAD0 /* NSData+Int8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSData+Int8.swift"; sourceTree = "<group>"; };
 		CEB60C9C2188A9E80022D27F /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		CEC3FE5921886FC7003620CE /* XMSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMSegmentedControl.swift; sourceTree = "<group>"; };
 		CEC4DFFF2186B0AE00F35ACC /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		CEC4E0032186E11700F35ACC /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		CEC4E0082186E19800F35ACC /* apercu_regular_pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = apercu_regular_pro.otf; path = PeriBear/fonts/apercu_regular_pro.otf; sourceTree = "<group>"; };
@@ -188,9 +192,11 @@
 				CE3A11B2217F292A0026CD32 /* Assets.xcassets */,
 				CE3A11B7217F292A0026CD32 /* Info.plist */,
 				CEC4DFFF2186B0AE00F35ACC /* RoundButton.swift */,
+				CE87A6A82195F7F00053EAD0 /* SimpleBluetoothIO.swift */,
+				CE87A6AA2195F8250053EAD0 /* NSData+Int8.swift */,
+				CE1B2471219EA5370001FFFE /* BluetoothSerial.swift */,
 				CEC6356A218743D600CD647C /* TooltipView.swift */,
 				CE3A11A9217F29290026CD32 /* AppDelegate.swift */,
-				CEC3FE5921886FC7003620CE /* XMSegmentedControl.swift */,
 			);
 			path = PeriBear;
 			sourceTree = "<group>";
@@ -286,6 +292,7 @@
 				TargetAttributes = {
 					CE3A11A5217F29290026CD32 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1010;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -453,10 +460,12 @@
 			files = (
 				CE87A6A72195F0F10053EAD0 /* FifthViewController.swift in Sources */,
 				CE3F57C32188B2BD001781E9 /* SecondViewController.swift in Sources */,
-				CEC3FE5A21886FC7003620CE /* XMSegmentedControl.swift in Sources */,
 				CEC6356B218743D600CD647C /* TooltipView.swift in Sources */,
 				CEC4E0002186B0AE00F35ACC /* RoundButton.swift in Sources */,
+				CE87A6AB2195F8250053EAD0 /* NSData+Int8.swift in Sources */,
 				CE564B062188BE5D00DE61EA /* FourthViewController.swift in Sources */,
+				CE1B2472219EA5370001FFFE /* BluetoothSerial.swift in Sources */,
+				CE87A6A92195F7F00053EAD0 /* SimpleBluetoothIO.swift in Sources */,
 				CEB60C9D2188A9E80022D27F /* ThirdViewController.swift in Sources */,
 				CE3A11AA217F29290026CD32 /* AppDelegate.swift in Sources */,
 				CE3F57C52188B2CB001781E9 /* FirstViewController.swift in Sources */,
@@ -635,6 +644,7 @@
 			baseConfigurationReference = 5ECB54750C274E22347CA098 /* Pods-PeriBear.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4722YKA867;
 				INFOPLIST_FILE = PeriBear/Info.plist;
@@ -644,6 +654,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = OOP2018.PeriBear;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -654,6 +665,7 @@
 			baseConfigurationReference = 2BAA7B4205802EE92412527E /* Pods-PeriBear.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4722YKA867;
 				INFOPLIST_FILE = PeriBear/Info.plist;
