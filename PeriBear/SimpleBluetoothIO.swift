@@ -37,9 +37,8 @@ class SimpleBluetoothIO: NSObject {
         }
         
         let data = Data.dataWithValue(value: value)
-        peripheral.writeValue(data, for: characteristic, type: .withResponse)
+        peripheral.writeValue(data, for: characteristic, type: CBCharacteristicWriteType.withoutResponse)
     }
-    
 }
 
 extension SimpleBluetoothIO: CBCentralManagerDelegate {

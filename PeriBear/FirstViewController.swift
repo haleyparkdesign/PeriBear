@@ -12,11 +12,13 @@ import UIKit
 class FirstViewController: UIViewController {
     var simpleBluetoothIO: SimpleBluetoothIO!
     @IBOutlet weak var lightSwitch: UISwitch!
+    @IBOutlet weak var TemperatureLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        simpleBluetoothIO = SimpleBluetoothIO(serviceUUID: "D235BA22-0D7B-064C-00C1-172B496470E5", delegate: self)
+        simpleBluetoothIO = SimpleBluetoothIO(serviceUUID: "0000ffe0-0000-1000-8000-00805f9b34fb", delegate: self)
+        
     }
     
     @IBAction func lightSwitchChanged(_ sender: Any) {
@@ -30,10 +32,7 @@ class FirstViewController: UIViewController {
 
 extension FirstViewController: SimpleBluetoothIODelegate {
     func simpleBluetoothIO(simpleBluetoothIO: SimpleBluetoothIO, didReceiveValue value: Int8) {
-        if value > 0 {
-            self.lightSwitch.setOn(true, animated: true);
-        } else {
-            self.lightSwitch.setOn(false, animated: true);
-        }
+        print("received from HM10: " + String(value))
+        TemperatureLabel.text = String(value) + "°C"
     }
 }

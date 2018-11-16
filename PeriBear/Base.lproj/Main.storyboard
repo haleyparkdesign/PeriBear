@@ -287,6 +287,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="tabBar_home" selectedImage="tabBar_home_selected" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="TemperatureLabel" destination="3Cq-On-gEA" id="Q5I-X4-XRx"/>
                         <outlet property="lightSwitch" destination="oi5-4n-2RB" id="Hb1-U6-zzl"/>
                     </connections>
                 </viewController>
@@ -1280,11 +1281,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJC-JZ-F31">
                                 <rect key="frame" x="50" y="322" width="297" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DR6-1L-G5M" customClass="RoundButton" customModule="PeriBear" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DR6-1L-G5M" customClass="RoundButton" customModule="PeriBear" customModuleProvider="target">
                                         <rect key="frame" x="249" y="0.0" width="48" height="30"/>
                                         <color key="backgroundColor" red="0.76862745099999996" green="0.7725490196" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="48" id="Hgc-vA-u8c"/>
                                             <constraint firstAttribute="height" constant="30" id="X3H-2a-jzj"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -1314,7 +1314,6 @@
                                 <constraints>
                                     <constraint firstItem="DR6-1L-G5M" firstAttribute="centerY" secondItem="dmU-gn-vbm" secondAttribute="centerY" id="12m-iS-ibG"/>
                                     <constraint firstItem="h6H-Mh-1fz" firstAttribute="centerY" secondItem="dmU-gn-vbm" secondAttribute="centerY" id="8e7-TD-5BR"/>
-                                    <constraint firstAttribute="trailing" secondItem="DR6-1L-G5M" secondAttribute="trailing" id="Kom-GL-aNb"/>
                                     <constraint firstItem="h6H-Mh-1fz" firstAttribute="top" secondItem="tJC-JZ-F31" secondAttribute="top" id="O5m-EF-b1V"/>
                                     <constraint firstAttribute="trailing" secondItem="h6H-Mh-1fz" secondAttribute="trailing" constant="1" id="RSS-FA-7ue"/>
                                     <constraint firstItem="h6H-Mh-1fz" firstAttribute="top" secondItem="dmU-gn-vbm" secondAttribute="top" id="agc-Zr-1Fd"/>
