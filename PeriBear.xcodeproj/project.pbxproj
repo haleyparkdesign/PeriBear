@@ -17,7 +17,6 @@
 		CE3A11CC217F292B0026CD32 /* PeriBearUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A11CB217F292B0026CD32 /* PeriBearUITests.swift */; };
 		CE3F57C32188B2BD001781E9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F57C22188B2BD001781E9 /* SecondViewController.swift */; };
 		CE3F57C52188B2CB001781E9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F57C42188B2CA001781E9 /* FirstViewController.swift */; };
-		CE564B062188BE5D00DE61EA /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE564B052188BE5D00DE61EA /* FourthViewController.swift */; };
 		CE87A6A72195F0F10053EAD0 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87A6A62195F0F10053EAD0 /* FifthViewController.swift */; };
 		CE87A6A92195F7F00053EAD0 /* SimpleBluetoothIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87A6A82195F7F00053EAD0 /* SimpleBluetoothIO.swift */; };
 		CE87A6AB2195F8250053EAD0 /* NSData+Int8.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87A6AA2195F8250053EAD0 /* NSData+Int8.swift */; };
@@ -30,6 +29,7 @@
 		CEC4E00C2186E19800F35ACC /* apercu_medium_pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEC4E0092186E19800F35ACC /* apercu_medium_pro.otf */; };
 		CEC4E00D2186E19800F35ACC /* apercu_bold_pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEC4E00A2186E19800F35ACC /* apercu_bold_pro.otf */; };
 		CEC6356B218743D600CD647C /* TooltipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6356A218743D600CD647C /* TooltipView.swift */; };
+		CED1A1B821A40075002CFE4E /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1A1B721A40075002CFE4E /* FourthViewController.swift */; };
 		D6B9F2B0F450E1E6DDA765A2 /* Pods_PeriBearTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63CB29FE9F96A1D3819C7405 /* Pods_PeriBearTests.framework */; };
 		FF95933A84ADF517FDD5301F /* Pods_PeriBear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4288375D3A94C82735A349A1 /* Pods_PeriBear.framework */; };
 /* End PBXBuildFile section */
@@ -89,7 +89,6 @@
 		CE3A11CD217F292B0026CD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE3F57C22188B2BD001781E9 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		CE3F57C42188B2CA001781E9 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		CE564B052188BE5D00DE61EA /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		CE87A6A62195F0F10053EAD0 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		CE87A6A82195F7F00053EAD0 /* SimpleBluetoothIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBluetoothIO.swift; sourceTree = "<group>"; };
 		CE87A6AA2195F8250053EAD0 /* NSData+Int8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSData+Int8.swift"; sourceTree = "<group>"; };
@@ -100,6 +99,7 @@
 		CEC4E0092186E19800F35ACC /* apercu_medium_pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = apercu_medium_pro.otf; path = PeriBear/fonts/apercu_medium_pro.otf; sourceTree = "<group>"; };
 		CEC4E00A2186E19800F35ACC /* apercu_bold_pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = apercu_bold_pro.otf; path = PeriBear/fonts/apercu_bold_pro.otf; sourceTree = "<group>"; };
 		CEC6356A218743D600CD647C /* TooltipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipView.swift; sourceTree = "<group>"; };
+		CED1A1B721A40075002CFE4E /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,8 +185,8 @@
 				CE3F57C42188B2CA001781E9 /* FirstViewController.swift */,
 				CE3F57C22188B2BD001781E9 /* SecondViewController.swift */,
 				CEB60C9C2188A9E80022D27F /* ThirdViewController.swift */,
-				CE564B052188BE5D00DE61EA /* FourthViewController.swift */,
 				CE87A6A62195F0F10053EAD0 /* FifthViewController.swift */,
+				CED1A1B721A40075002CFE4E /* FourthViewController.swift */,
 				CE3A11AF217F29290026CD32 /* Main.storyboard */,
 				CE3A11B4217F292A0026CD32 /* LaunchScreen.storyboard */,
 				CE3A11B2217F292A0026CD32 /* Assets.xcassets */,
@@ -460,10 +460,10 @@
 			files = (
 				CE87A6A72195F0F10053EAD0 /* FifthViewController.swift in Sources */,
 				CE3F57C32188B2BD001781E9 /* SecondViewController.swift in Sources */,
+				CED1A1B821A40075002CFE4E /* FourthViewController.swift in Sources */,
 				CEC6356B218743D600CD647C /* TooltipView.swift in Sources */,
 				CEC4E0002186B0AE00F35ACC /* RoundButton.swift in Sources */,
 				CE87A6AB2195F8250053EAD0 /* NSData+Int8.swift in Sources */,
-				CE564B062188BE5D00DE61EA /* FourthViewController.swift in Sources */,
 				CE1B2472219EA5370001FFFE /* BluetoothSerial.swift in Sources */,
 				CE87A6A92195F7F00053EAD0 /* SimpleBluetoothIO.swift in Sources */,
 				CEB60C9D2188A9E80022D27F /* ThirdViewController.swift in Sources */,

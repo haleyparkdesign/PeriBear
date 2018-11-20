@@ -18,21 +18,19 @@ void loop() {
     command = Bluetooth.read();  
     Serial.println("Input received:");
     
-    if (command != 0) {
+    if (command == 1) {
       // A non-zero input will turn on the LED
-      Serial.println("!0 / ON");
+      Serial.println("1 / ON");
       digitalWrite(led, HIGH);
       
-    } else {
+    } else if (command == 0) {
       // A zero value input will turn off the LED
       Serial.println("0 / OFF");
       digitalWrite(led, LOW);
-      
     } 
-  }
 
-  if (Serial.available()) {
-    //Send back data to Bluetooth module
-    Bluetooth.write(255);
+    // Send integer to the app. Later change to the temp sensor value.
+    int temperature = 99;
+    Bluetooth.write(temperature);
   }
 }

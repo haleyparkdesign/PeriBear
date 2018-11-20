@@ -18,7 +18,6 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         simpleBluetoothIO = SimpleBluetoothIO(serviceUUID: "0000ffe0-0000-1000-8000-00805f9b34fb", delegate: self)
-        
     }
     
     @IBAction func lightSwitchChanged(_ sender: Any) {
@@ -32,7 +31,9 @@ class FirstViewController: UIViewController {
 
 extension FirstViewController: SimpleBluetoothIODelegate {
     func simpleBluetoothIO(simpleBluetoothIO: SimpleBluetoothIO, didReceiveValue value: Int8) {
-        print("received from HM10: " + String(value))
+        
+        print(value)
+        
         TemperatureLabel.text = String(value) + "°C"
     }
 }
