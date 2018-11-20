@@ -2,10 +2,17 @@
 
 #include <Adafruit_NeoPixel.h>
 #include <SoftwareSerial.h>
+#include "DHT.h"
 
-#define PIN 6
-#define N_LEDS 144
+
+#define PIN 3
+#define N_LEDS 144 // LED 개수
+#define DHTPIN 6
+#define DHTTYPE DHT11 // DHT 11
+
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(N_LEDS, PIN, NEO_GRB + NEO_KHZ800);
+
+DHT dht(DHTPIN, DHTTYPE);
 
 SoftwareSerial Bluetooth(7, 8);
 
@@ -16,6 +23,11 @@ void setup() {
   
   strip.begin();
   strip.show(); // Initialize all pixels to 'off'
+
+//  Serial.begin(9600);
+  Serial.println("DHTxx test!");
+
+  dht.begin();
 }
 
 void loop() {  
@@ -28,22 +40,81 @@ void loop() {
     if (command == 1) {
       // A non-zero input will turn on the LED
       Serial.println("1 / ON");
-      rainbow(20);
-      rainbowCycle(20);
+      rainbow(1);
+//      rainbowCycle(1);
+//      strip.setPixel
       
     } else if (command == 0) {
       // A zero value input will turn off the LED
       Serial.println("0 / OFF");
 
-      strip.show();  // Initialize all pixels to 'off'
-    } 
+      // turn off the LED strip
+      for (int i = 0; i < strip.numPixels(); i++) {
+        strip.setPixelColor(i, strip.Color(0,0,0));
+      }
+      
+      strip.show();   // important
+   } 
+        // Wait a few seconds between measurements.
+    delay(1);
+  
+    // Reading temperature or humidity takes about 250 milliseconds!
+    // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
+    float h = dht.readHumidity();
+    // Read temperature as Celsius (the default)
+    float t = dht.readTemperature();
+    // Read temperature as Fahrenheit (isFahrenheit = true)
+    float f = dht.readTemperature(true);
+  
+    // Check if any reads failed and exit early (to try again).
+    if (isnan(h) || isnan(t) || isnan(f)) {
+      Serial.println("Failed to read from DHT sensor!");
+      return;
+  
+      // Compute heat index in Fahrenheit (the default)
+    float hif = dht.computeHeatIndex(f, h);
+    // Compute heat index in Celsius (isFahreheit = false)
+    float hic = dht.computeHeatIndex(t, h, false);
+  
+    Serial.print("Humidity: ");
+    Serial.print(h);
+    Serial.print(" %\t");
+    Serial.print("Temperature: ");
+    Serial.print(t);
+    Serial.print(" *C ");
+    Serial.print(f);
+    Serial.print(" *F\t");
+    Serial.print("Heat index: ");
+    Serial.print(hic);
+    Serial.print(" *C ");
+    Serial.print(hif);
+    Serial.println(" *F");
+  
+  }
+    // Compute heat index in Fahrenheit (the default)
+    float hif = dht.computeHeatIndex(f, h);
+    // Compute heat index in Celsius (isFahreheit = false)
+    float hic = dht.computeHeatIndex(t, h, false);
+  
+    Serial.print("Humidity: ");
+    Serial.print(h);
+    Serial.print(" %\t");
+    Serial.print("Temperature: ");
+    Serial.print(t);
+    Serial.print(" *C ");
+    Serial.print(f);
+    Serial.print(" *F\t");
+    Serial.print("Heat index: ");
+    Serial.print(hic);
+    Serial.print(" *C ");
+    Serial.print(hif);
+    Serial.println(" *F");
 
-    // Send integer to the app. Later change to the temp sensor value.
+     // Send integer to the app. Later change to the temp sensor value.
     int temperature = 99;
     Bluetooth.write(temperature);
   }
 }
-
 
 void rainbow(uint8_t wait) {
   uint16_t i, j;
