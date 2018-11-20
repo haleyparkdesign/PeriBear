@@ -42,7 +42,6 @@ void loop() {
       Serial.println("1 / ON");
       rainbow(1);
 //      rainbowCycle(1);
-//      strip.setPixel
       
     } else if (command == 0) {
       // A zero value input will turn off the LED
@@ -111,8 +110,7 @@ void loop() {
     Serial.println(" *F");
 
      // Send integer to the app. Later change to the temp sensor value.
-    int temperature = 99;
-    Bluetooth.write(temperature);
+    Bluetooth.write(t);
   }
 }
 
