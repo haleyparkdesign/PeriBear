@@ -14,6 +14,10 @@ Adafruit_NeoPixel strip = Adafruit_NeoPixel(N_LEDS, PIN, NEO_GRB + NEO_KHZ800);
 
 DHT dht(DHTPIN, DHTTYPE);
 
+int fetPin = 4;
+const int pinUP = 255; // max analog output, heater on
+const int pinDOWN = 0; // heater off 
+
 SoftwareSerial Bluetooth(7, 8);
 
 void setup() {  
@@ -28,6 +32,8 @@ void setup() {
   Serial.println("DHTxx test!");
 
   dht.begin();
+
+  pinMode(fetPin, OUTPUT);  
 }
 
 void loop() {  
@@ -41,6 +47,7 @@ void loop() {
       // A non-zero input will turn on the LED
       Serial.println("1 / ON");
       rainbow(1);
+      analogWrite(fetPin, pinUP); // heater on at 100%
 //      rainbowCycle(1);
       
     } else if (command == 0) {
@@ -53,6 +60,8 @@ void loop() {
       }
       
       strip.show();   // important
+      analogWrite(fetPin, pinDOWN); // heater off
+
    } 
         // Wait a few seconds between measurements.
     delay(1);
