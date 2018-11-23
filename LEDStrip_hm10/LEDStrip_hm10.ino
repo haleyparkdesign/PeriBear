@@ -6,7 +6,7 @@
 
 
 #define PIN 3
-#define N_LEDS 144 // LED 개수
+#define N_LEDS 144 // Number of LEDs
 #define DHTPIN 6
 #define DHTTYPE DHT11 // DHT 11
 
@@ -28,9 +28,7 @@ void setup() {
   strip.begin();
   strip.show(); // Initialize all pixels to 'off'
 
-//  Serial.begin(9600);
   Serial.println("DHTxx test!");
-
   dht.begin();
 
   pinMode(fetPin, OUTPUT);  
@@ -47,7 +45,7 @@ void loop() {
       // A non-zero input will turn on the LED
       Serial.println("1 / ON");
       rainbow(1);
-      analogWrite(fetPin, pinUP); // heater on at 100%
+     
 //      rainbowCycle(1);
       
     } else if (command == 0) {
@@ -59,12 +57,18 @@ void loop() {
         strip.setPixelColor(i, strip.Color(0,0,0));
       }
       
-      strip.show();   // important
-      analogWrite(fetPin, pinDOWN); // heater off
+      strip.show();   // important for turning off the LED strip
+      
 
-   } 
-        // Wait a few seconds between measurements.
-    delay(1);
+   } else if (command == 4) {
+     analogWrite(fetPin, pinUP); // heater on at 100% 
+     
+   } else if (command == 3) {
+     analogWrite(fetPin, pinDOWN); // heater off
+     
+   }
+        
+   delay(1);  // Wait a few seconds between measurements.
   
     // Reading temperature or humidity takes about 250 milliseconds!
     // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
@@ -118,8 +122,7 @@ void loop() {
     Serial.print(hif);
     Serial.println(" *F");
 
-     // Send integer to the app. Later change to the temp sensor value.
-    Bluetooth.write(t);
+    Bluetooth.write(t); // Send integer to the app.
   }
 }
 
@@ -147,8 +150,6 @@ void rainbowCycle(uint8_t wait) {
     delay(wait);
   }
 }
-
-
 
 //Theatre-style crawling lights with rainbow effect (don't use)
 void theaterChaseRainbow(uint8_t wait) {

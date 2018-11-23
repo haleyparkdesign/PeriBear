@@ -12,12 +12,21 @@ import UIKit
 class FirstViewController: UIViewController {
     var simpleBluetoothIO: SimpleBluetoothIO!
     @IBOutlet weak var lightSwitch: UISwitch!
+    @IBOutlet weak var heatSwitch: UISwitch!
     @IBOutlet weak var TemperatureLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         simpleBluetoothIO = SimpleBluetoothIO(serviceUUID: "0000ffe0-0000-1000-8000-00805f9b34fb", delegate: self)
+    }
+    
+    @IBAction func heatSwitchChanged(_ sender: Any) {
+        if (heatSwitch.isOn) {
+            simpleBluetoothIO.writeValue(value: 4)
+        } else {
+            simpleBluetoothIO.writeValue(value: 3)
+        }
     }
     
     @IBAction func lightSwitchChanged(_ sender: Any) {

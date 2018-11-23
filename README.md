@@ -14,4 +14,5 @@ No matter how many times we experience it, it’s always stressful to keep track
 * PeriBear app sends you notifications about your period.
 
 ### Contributors
-Haley Park(@hyojeongpark), Phai Tulyathan(@phaituly)
+Haley Park([@hyojeongpark](https://github.com/hyojeongpark)),
+Phai Tulyathan([@phaituly](https://github.com/phaituly))

@@ -79,8 +79,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your PeriBear 🧸" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="28" y="234" width="176" height="20"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your PeriBear 🧸" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
+                                <rect key="frame" x="28" y="234" width="165" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="yzp-yZ-cFN"/>
                                 </constraints>
@@ -198,6 +198,9 @@
                                 <rect key="frame" x="298" y="476" width="51" height="30"/>
                                 <color key="tintColor" red="0.76862745099999996" green="0.7725490196" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="onTintColor" red="0.94901960780000005" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="heatSwitchChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="ofQ-pY-KJ0"/>
+                                </connections>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -281,6 +284,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="tabBar_home" selectedImage="tabBar_home_selected" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="TemperatureLabel" destination="3Cq-On-gEA" id="Q5I-X4-XRx"/>
+                        <outlet property="heatSwitch" destination="3xN-bQ-Yfg" id="wjg-h3-7eY"/>
                         <outlet property="lightSwitch" destination="oi5-4n-2RB" id="Hb1-U6-zzl"/>
                     </connections>
                 </viewController>
@@ -1102,13 +1106,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Light 💡" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="0Sj-5W-Osl">
-                                <rect key="frame" x="26" y="75" width="192" height="37.5"/>
+                                <rect key="frame" x="26" y="75" width="192" height="38.5"/>
                                 <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="32"/>
                                 <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="PeriBear's light settings." lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="i3n-KI-VJF">
-                                <rect key="frame" x="26" y="117.5" width="271" height="31"/>
+                                <rect key="frame" x="26" y="118.5" width="271" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="phm-gu-66B"/>
                                 </constraints>
@@ -1117,7 +1121,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wyI-tw-Zfw">
-                                <rect key="frame" x="50" y="168.5" width="297" height="32.5"/>
+                                <rect key="frame" x="50" y="169.5" width="297" height="31.5"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="White" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="TaK-iV-Eso">
                                         <rect key="frame" x="0.0" y="0.0" width="54" height="31"/>
@@ -1342,7 +1346,7 @@
                                         </connections>
                                     </switch>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Purple" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="VYY-8h-ReY">
-                                        <rect key="frame" x="0.0" y="0.0" width="52.5" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="32"/>
                                         <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="18"/>
                                         <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
