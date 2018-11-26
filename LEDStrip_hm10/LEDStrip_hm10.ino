@@ -13,13 +13,13 @@
 void ringOn();
 void ringOff();
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(N_LEDS, StripPIN, NEO_GRB + NEO_KHZ800);
-Adafruit_NeoPixel ring = Adafruit_NeoPixel(12, RingPIN, NEO_GRBW + NEO_KHZ800);
+Adafruit_NeoPixel ring = Adafruit_NeoPixel(16, RingPIN, NEO_GRB + NEO_KHZ800);
 
 DHT dht(DHTPIN, DHTTYPE);
 
 int fetPin = 4;
 int state = 0;
-int pinUP = 255; // max analog output, heater on
+int pinUP = 200; // heater on. max analog output is 255
 int pinDOWN = 0; // heater off 
 
 SoftwareSerial Bluetooth(7, 8);
@@ -31,6 +31,9 @@ void setup() {
   
   strip.begin();
   strip.show(); // Initialize all pixels to 'off'
+
+  ring.begin();
+  ring.show(); // Initialize all pixels to 'off'
 
   Serial.println("DHTxx test!");
   dht.begin();
@@ -50,7 +53,6 @@ void loop() {
       state = pinUP;
       Serial.println(state);
       rainbow(1);
-     
 //     rainbowCycle(1);
       
     } else if (command == 0) {
@@ -67,12 +69,13 @@ void loop() {
       strip.show();   // important for turning off the LED strip
 
    } else if (command == 4) {
-     ringOn();
      analogWrite(fetPin, pinUP); // heater on at 100% 
-
+     ringOn();
+    
    } else if (command == 3) {
-     ringOff();
+//     state = pinDOWN;
      analogWrite(fetPin, pinDOWN); // heater off
+     ringOff();
    }
         
    delay(1);  // Wait a little bit between measurements.
@@ -190,47 +193,22 @@ uint32_t Wheel(byte WheelPos) {
   return strip.Color(WheelPos * 3, 255 - WheelPos * 3, 0);
 }
 
-void ringOn() { // turn off the LED ring
-
-   for (int j = 0; j<100 ; j++) {
-      for (int i = 0; i < ring.numPixels(); i++) {
-        ring.setPixelColor(i, ring.Color(j,0,0));
+void ringOn() {     // turn off the LED ring
+  uint16_t i, j;
+  
+    for(j = 0; j < 100; j++) {
+      for(i=0; i<ring.numPixels(); i++) {
+        ring.setPixelColor(i, ring.Color(100,0,0));
       }
-      
-      ring.show();   // important for turning off the LED ring
-      delay(20);
-   }
-   
-   for (int k = 100; k>0 ; k--) {
-      for (int i = 0; i < ring.numPixels(); i++) {
-        ring.setPixelColor(i, ring.Color(k,0,0));
-      }
-      
-      ring.show();   // important for turning off the LED strip
-      delay(20);
-   }
-   delay(500);
-   
+      ring.show();
+      delay(10);
+    }
 }   
 
-void ringOff() {
-
-   // turn off the LED strip
-
-    // turn off the LED strip
+void ringOff() {    // turn off the LED ring
       for (int i = 0; i < ring.numPixels(); i++) {
-        strip.setPixelColor(i, ring.Color(0,0,0));
+        ring.setPixelColor(i, ring.Color(0,0,0));
       }
       
-      ring.show();   // important for turning off the LED strip
-//   
-//   for(int k = 100; k>0 ; k--) {
-//      for (int i = 0; i < strip.numPixels(); i++) {
-//        strip.setPixelColor(i, strip.Color(0,0,k));
-//      }
-//      
-//      strip.show();   // important for turning off the LED strip
-//      delay(20);
-//   }
-//   delay(500);
-}   
+      ring.show();   // important for turning off the LED strip  
+}
