@@ -5,18 +5,22 @@
 #include "DHT.h"
 
 
-#define PIN 3
+#define StripPIN 3
+#define RingPIN 9
 #define N_LEDS 144 // Number of LEDs
 #define DHTPIN 6
 #define DHTTYPE DHT11 // DHT 11
-
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(N_LEDS, PIN, NEO_GRB + NEO_KHZ800);
+void ringOn();
+void ringOff();
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(N_LEDS, StripPIN, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel ring = Adafruit_NeoPixel(12, RingPIN, NEO_GRBW + NEO_KHZ800);
 
 DHT dht(DHTPIN, DHTTYPE);
 
 int fetPin = 4;
-const int pinUP = 255; // max analog output, heater on
-const int pinDOWN = 0; // heater off 
+int state = 0;
+int pinUP = 255; // max analog output, heater on
+int pinDOWN = 0; // heater off 
 
 SoftwareSerial Bluetooth(7, 8);
 
@@ -41,16 +45,19 @@ void loop() {
     command = Bluetooth.read();  
     Serial.println("Input received:");
     
-    if (command == 1) {
-      // A non-zero input will turn on the LED
+    if (command == 1) { // turn on LED
       Serial.println("1 / ON");
+      state = pinUP;
+      Serial.println(state);
       rainbow(1);
      
-//      rainbowCycle(1);
+//     rainbowCycle(1);
       
     } else if (command == 0) {
       // A zero value input will turn off the LED
       Serial.println("0 / OFF");
+      state = pinDOWN;
+      Serial.println(state);
 
       // turn off the LED strip
       for (int i = 0; i < strip.numPixels(); i++) {
@@ -58,17 +65,17 @@ void loop() {
       }
       
       strip.show();   // important for turning off the LED strip
-      
 
    } else if (command == 4) {
+     ringOn();
      analogWrite(fetPin, pinUP); // heater on at 100% 
-     
+
    } else if (command == 3) {
+     ringOff();
      analogWrite(fetPin, pinDOWN); // heater off
-     
    }
         
-   delay(1);  // Wait a few seconds between measurements.
+   delay(1);  // Wait a little bit between measurements.
   
     // Reading temperature or humidity takes about 250 milliseconds!
     // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
@@ -101,7 +108,6 @@ void loop() {
     Serial.print(" *C ");
     Serial.print(hif);
     Serial.println(" *F");
-  
   }
     // Compute heat index in Fahrenheit (the default)
     float hif = dht.computeHeatIndex(f, h);
@@ -183,3 +189,48 @@ uint32_t Wheel(byte WheelPos) {
   WheelPos -= 170;
   return strip.Color(WheelPos * 3, 255 - WheelPos * 3, 0);
 }
+
+void ringOn() { // turn off the LED ring
+
+   for (int j = 0; j<100 ; j++) {
+      for (int i = 0; i < ring.numPixels(); i++) {
+        ring.setPixelColor(i, ring.Color(j,0,0));
+      }
+      
+      ring.show();   // important for turning off the LED ring
+      delay(20);
+   }
+   
+   for (int k = 100; k>0 ; k--) {
+      for (int i = 0; i < ring.numPixels(); i++) {
+        ring.setPixelColor(i, ring.Color(k,0,0));
+      }
+      
+      ring.show();   // important for turning off the LED strip
+      delay(20);
+   }
+   delay(500);
+   
+}   
+
+void ringOff() {
+
+   // turn off the LED strip
+
+    // turn off the LED strip
+      for (int i = 0; i < ring.numPixels(); i++) {
+        strip.setPixelColor(i, ring.Color(0,0,0));
+      }
+      
+      ring.show();   // important for turning off the LED strip
+//   
+//   for(int k = 100; k>0 ; k--) {
+//      for (int i = 0; i < strip.numPixels(); i++) {
+//        strip.setPixelColor(i, strip.Color(0,0,k));
+//      }
+//      
+//      strip.show();   // important for turning off the LED strip
+//      delay(20);
+//   }
+//   delay(500);
+}   

@@ -1737,72 +1737,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Hyunjin" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="HX1-ki-RdM">
-                                <rect key="frame" x="70" y="208" width="235" height="39"/>
+                                <rect key="frame" x="70" y="211" width="235" height="38"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="zzc-1F-yny"/>
+                                    <constraint firstAttribute="height" constant="38" id="IEu-ns-MTH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="32"/>
                                 <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Manage Health Information" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="cx3-Wq-byu">
-                                <rect key="frame" x="30" y="266" width="246" height="31"/>
+                                <rect key="frame" x="30" y="268" width="244" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="Bel-3o-OQ7"/>
+                                    <constraint firstAttribute="height" constant="31" id="a31-pt-kln"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="20"/>
                                 <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Export Data" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="SxC-nu-ayx">
-                                <rect key="frame" x="50" y="389" width="110" height="31"/>
+                                <rect key="frame" x="50" y="391" width="110" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="dfR-Wg-3TE"/>
+                                    <constraint firstAttribute="height" constant="31" id="qEL-9t-YNN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ApercuPro" family="Apercu Pro" pointSize="18"/>
                                 <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Clear Data" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="fka-HR-wty">
-                                <rect key="frame" x="50" y="430" width="110" height="31"/>
+                                <rect key="frame" x="50" y="432" width="110" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="A5V-qp-8vP"/>
+                                    <constraint firstAttribute="height" constant="31" id="4dV-mH-MMt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ApercuPro" family="Apercu Pro" pointSize="18"/>
                                 <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Import Data" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5nj-1f-BIL">
-                                <rect key="frame" x="50" y="348" width="99" height="31"/>
+                                <rect key="frame" x="50" y="350" width="99" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="j3t-Zp-UAk"/>
+                                    <constraint firstAttribute="height" constant="31" id="Oqp-hk-m5s"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ApercuPro" family="Apercu Pro" pointSize="18"/>
                                 <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mva-qo-xmr" customClass="RoundButton" customModule="PeriBear" customModuleProvider="target">
-                                <rect key="frame" x="301" y="471" width="51" height="31"/>
-                                <color key="backgroundColor" red="0.76862745099999996" green="0.7725490196" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="ApercuPro" family="Apercu Pro" pointSize="17"/>
-                                <color key="tintColor" red="0.76862745099999996" green="0.7725490196" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="-7" maxX="0.0" maxY="0.0"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="17"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="leading" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Jkq-1P-Jfd">
-                                <rect key="frame" x="301" y="471" width="51" height="31"/>
-                                <color key="tintColor" red="0.76862745099999996" green="0.7725490196" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="onTintColor" red="0.94901960780000005" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </switch>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="XUu-i7-TJx">
-                                <rect key="frame" x="132" y="83" width="110" height="110"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="XUu-i7-TJx">
+                                <rect key="frame" x="132" y="83" width="111" height="111"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
                                         <real key="value" value="55"/>
@@ -1810,22 +1790,19 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Data" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="kU2-LU-P0G">
-                                <rect key="frame" x="30" y="307" width="246" height="31"/>
+                                <rect key="frame" x="30" y="309" width="244" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="AIh-sS-wdz"/>
+                                    <constraint firstAttribute="height" constant="31" id="u35-QV-bym"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="20"/>
                                 <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Pregnancy Mode" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="JGP-cJ-aZl">
-                                <rect key="frame" x="30" y="471" width="246" height="31"/>
-                                <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="20"/>
-                                <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Log Out" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Bzb-SQ-eEm">
-                                <rect key="frame" x="30" y="512" width="246" height="31"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Log Out" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="JGP-cJ-aZl">
+                                <rect key="frame" x="30" y="473" width="244" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="gOl-Vl-X2P"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="20"/>
                                 <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1833,42 +1810,30 @@
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qZD-dq-zfH" firstAttribute="trailing" secondItem="Jkq-1P-Jfd" secondAttribute="trailing" constant="25" id="5AX-7g-B4w"/>
-                            <constraint firstItem="Jkq-1P-Jfd" firstAttribute="leading" secondItem="mva-qo-xmr" secondAttribute="leading" id="9l0-j9-6uM"/>
-                            <constraint firstItem="JGP-cJ-aZl" firstAttribute="trailing" secondItem="Bzb-SQ-eEm" secondAttribute="trailing" id="B7p-HY-NOs"/>
-                            <constraint firstItem="XUu-i7-TJx" firstAttribute="centerX" secondItem="D4V-Gf-5Ba" secondAttribute="centerX" id="Far-hR-4y7"/>
-                            <constraint firstItem="qZD-dq-zfH" firstAttribute="trailing" secondItem="5nj-1f-BIL" secondAttribute="trailing" constant="226" id="G0i-P2-NLW"/>
-                            <constraint firstItem="SxC-nu-ayx" firstAttribute="trailing" secondItem="fka-HR-wty" secondAttribute="trailing" id="JI1-Jm-Cn4"/>
-                            <constraint firstItem="XUu-i7-TJx" firstAttribute="centerX" secondItem="HX1-ki-RdM" secondAttribute="centerX" id="K16-c0-TZA"/>
-                            <constraint firstItem="JGP-cJ-aZl" firstAttribute="top" secondItem="fka-HR-wty" secondAttribute="bottom" constant="10" id="LhY-xu-wIa"/>
-                            <constraint firstItem="cx3-Wq-byu" firstAttribute="top" secondItem="HX1-ki-RdM" secondAttribute="bottom" constant="19" id="OCW-wZ-91w"/>
-                            <constraint firstItem="Jkq-1P-Jfd" firstAttribute="bottom" secondItem="mva-qo-xmr" secondAttribute="bottom" id="OEt-Gn-BQZ"/>
-                            <constraint firstItem="Bzb-SQ-eEm" firstAttribute="top" secondItem="JGP-cJ-aZl" secondAttribute="bottom" constant="10" id="Oxg-GX-6Bx"/>
-                            <constraint firstItem="JGP-cJ-aZl" firstAttribute="bottom" secondItem="Jkq-1P-Jfd" secondAttribute="bottom" id="PPx-xm-arM"/>
-                            <constraint firstItem="XUu-i7-TJx" firstAttribute="leading" secondItem="qZD-dq-zfH" secondAttribute="leading" constant="132" id="Q1T-be-NzM"/>
-                            <constraint firstItem="HX1-ki-RdM" firstAttribute="top" secondItem="XUu-i7-TJx" secondAttribute="bottom" constant="15" id="REC-HE-sGO"/>
-                            <constraint firstItem="JGP-cJ-aZl" firstAttribute="top" secondItem="Jkq-1P-Jfd" secondAttribute="top" id="Swr-m7-rsv"/>
-                            <constraint firstItem="qZD-dq-zfH" firstAttribute="trailing" secondItem="SxC-nu-ayx" secondAttribute="trailing" constant="215" id="Yfe-6D-Zr4"/>
-                            <constraint firstItem="5nj-1f-BIL" firstAttribute="leading" secondItem="qZD-dq-zfH" secondAttribute="leading" constant="50" id="ayF-iK-qQR"/>
-                            <constraint firstItem="SxC-nu-ayx" firstAttribute="top" secondItem="5nj-1f-BIL" secondAttribute="bottom" constant="10" id="bou-rP-UkK"/>
-                            <constraint firstItem="cx3-Wq-byu" firstAttribute="leading" secondItem="kU2-LU-P0G" secondAttribute="leading" id="c2W-nH-0k7"/>
-                            <constraint firstItem="qZD-dq-zfH" firstAttribute="bottom" secondItem="Bzb-SQ-eEm" secondAttribute="bottom" constant="75" id="dKE-nG-h4d"/>
-                            <constraint firstItem="qZD-dq-zfH" firstAttribute="trailing" secondItem="mva-qo-xmr" secondAttribute="trailing" constant="23" id="dYV-8E-5L8"/>
-                            <constraint firstItem="5nj-1f-BIL" firstAttribute="top" secondItem="kU2-LU-P0G" secondAttribute="bottom" constant="10" id="eNx-q4-KSS"/>
-                            <constraint firstItem="JGP-cJ-aZl" firstAttribute="leading" secondItem="Bzb-SQ-eEm" secondAttribute="leading" id="eWt-Wb-h0o"/>
-                            <constraint firstItem="fka-HR-wty" firstAttribute="top" secondItem="SxC-nu-ayx" secondAttribute="bottom" constant="10" id="fEQ-VI-UUh"/>
-                            <constraint firstItem="kU2-LU-P0G" firstAttribute="leading" secondItem="JGP-cJ-aZl" secondAttribute="leading" id="gb5-3a-XkW"/>
-                            <constraint firstItem="qZD-dq-zfH" firstAttribute="bottom" secondItem="Jkq-1P-Jfd" secondAttribute="bottom" constant="116" id="h5W-t7-7jW"/>
-                            <constraint firstItem="5nj-1f-BIL" firstAttribute="leading" secondItem="SxC-nu-ayx" secondAttribute="leading" id="hGv-oQ-VX4"/>
-                            <constraint firstItem="Jkq-1P-Jfd" firstAttribute="top" secondItem="mva-qo-xmr" secondAttribute="top" id="mqQ-UA-sQm"/>
-                            <constraint firstItem="kU2-LU-P0G" firstAttribute="top" secondItem="cx3-Wq-byu" secondAttribute="bottom" constant="10" id="nLP-Fp-1VL"/>
-                            <constraint firstItem="cx3-Wq-byu" firstAttribute="leading" secondItem="qZD-dq-zfH" secondAttribute="leading" constant="30" id="nzd-Mz-g2w"/>
-                            <constraint firstItem="SxC-nu-ayx" firstAttribute="leading" secondItem="fka-HR-wty" secondAttribute="leading" id="pPe-14-VBV"/>
-                            <constraint firstItem="HX1-ki-RdM" firstAttribute="leading" secondItem="qZD-dq-zfH" secondAttribute="leading" constant="70" id="q3d-cf-5dz"/>
-                            <constraint firstItem="mva-qo-xmr" firstAttribute="leading" secondItem="JGP-cJ-aZl" secondAttribute="trailing" constant="25" id="suN-iP-Ojc"/>
-                            <constraint firstItem="cx3-Wq-byu" firstAttribute="trailing" secondItem="kU2-LU-P0G" secondAttribute="trailing" id="u5g-aN-Mme"/>
-                            <constraint firstItem="kU2-LU-P0G" firstAttribute="trailing" secondItem="JGP-cJ-aZl" secondAttribute="trailing" id="wxr-EN-hPM"/>
-                            <constraint firstItem="XUu-i7-TJx" firstAttribute="top" secondItem="qZD-dq-zfH" secondAttribute="top" constant="63" id="yUa-lW-hcv"/>
+                            <constraint firstItem="SxC-nu-ayx" firstAttribute="top" secondItem="5nj-1f-BIL" secondAttribute="bottom" constant="10" id="E07-rT-QBx"/>
+                            <constraint firstItem="fka-HR-wty" firstAttribute="top" secondItem="SxC-nu-ayx" secondAttribute="bottom" constant="10" id="Elq-1j-9xZ"/>
+                            <constraint firstItem="kU2-LU-P0G" firstAttribute="top" secondItem="cx3-Wq-byu" secondAttribute="bottom" constant="10" id="IlE-sr-oeX"/>
+                            <constraint firstItem="JGP-cJ-aZl" firstAttribute="top" secondItem="fka-HR-wty" secondAttribute="bottom" constant="10" id="KEY-17-ZSz"/>
+                            <constraint firstItem="kU2-LU-P0G" firstAttribute="leading" secondItem="JGP-cJ-aZl" secondAttribute="leading" id="OBL-RI-Fqu"/>
+                            <constraint firstItem="cx3-Wq-byu" firstAttribute="trailing" secondItem="kU2-LU-P0G" secondAttribute="trailing" id="PvT-dp-4wZ"/>
+                            <constraint firstItem="5nj-1f-BIL" firstAttribute="leading" secondItem="SxC-nu-ayx" secondAttribute="leading" id="Qtw-ZE-gpP"/>
+                            <constraint firstItem="5nj-1f-BIL" firstAttribute="top" secondItem="kU2-LU-P0G" secondAttribute="bottom" constant="10" id="TAJ-W1-tRy"/>
+                            <constraint firstItem="kU2-LU-P0G" firstAttribute="trailing" secondItem="JGP-cJ-aZl" secondAttribute="trailing" id="YqX-dp-NN4"/>
+                            <constraint firstItem="qZD-dq-zfH" firstAttribute="bottom" secondItem="JGP-cJ-aZl" secondAttribute="bottom" constant="121" id="ZuN-RC-XML"/>
+                            <constraint firstItem="XUu-i7-TJx" firstAttribute="leading" secondItem="qZD-dq-zfH" secondAttribute="leading" constant="132" id="b7C-C3-sQ9"/>
+                            <constraint firstItem="qZD-dq-zfH" firstAttribute="trailing" secondItem="SxC-nu-ayx" secondAttribute="trailing" constant="215" id="c3k-g6-zp1"/>
+                            <constraint firstItem="qZD-dq-zfH" firstAttribute="trailing" secondItem="5nj-1f-BIL" secondAttribute="trailing" constant="226" id="cKW-sV-kiH"/>
+                            <constraint firstItem="cx3-Wq-byu" firstAttribute="leading" secondItem="kU2-LU-P0G" secondAttribute="leading" id="e9x-i5-fBa"/>
+                            <constraint firstItem="HX1-ki-RdM" firstAttribute="top" secondItem="XUu-i7-TJx" secondAttribute="bottom" constant="17" id="eYp-Ip-30w"/>
+                            <constraint firstItem="XUu-i7-TJx" firstAttribute="top" secondItem="qZD-dq-zfH" secondAttribute="top" constant="63" id="g1F-bi-G5G"/>
+                            <constraint firstItem="XUu-i7-TJx" firstAttribute="centerX" secondItem="HX1-ki-RdM" secondAttribute="centerX" id="h6k-1d-jMy"/>
+                            <constraint firstItem="cx3-Wq-byu" firstAttribute="top" secondItem="HX1-ki-RdM" secondAttribute="bottom" constant="19" id="iqd-6e-RsP"/>
+                            <constraint firstItem="SxC-nu-ayx" firstAttribute="trailing" secondItem="fka-HR-wty" secondAttribute="trailing" id="iwe-hO-YGg"/>
+                            <constraint firstItem="SxC-nu-ayx" firstAttribute="leading" secondItem="fka-HR-wty" secondAttribute="leading" id="lFP-2r-EJT"/>
+                            <constraint firstItem="HX1-ki-RdM" firstAttribute="leading" secondItem="qZD-dq-zfH" secondAttribute="leading" constant="70" id="mW1-h8-smw"/>
+                            <constraint firstItem="cx3-Wq-byu" firstAttribute="leading" secondItem="qZD-dq-zfH" secondAttribute="leading" constant="30" id="qos-my-HHD"/>
+                            <constraint firstItem="5nj-1f-BIL" firstAttribute="leading" secondItem="qZD-dq-zfH" secondAttribute="leading" constant="50" id="taJ-vL-UWt"/>
+                            <constraint firstItem="XUu-i7-TJx" firstAttribute="centerX" secondItem="D4V-Gf-5Ba" secondAttribute="centerX" id="wQb-CB-Ypa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qZD-dq-zfH"/>
                     </view>
