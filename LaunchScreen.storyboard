@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradientBall_blue" translatesAutoresizingMaskIntoConstraints="NO" id="dob-59-XfE">
+                                <rect key="frame" x="-115" y="422" width="310" height="310"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="310" id="2Wa-St-U5F"/>
+                                    <constraint firstAttribute="width" secondItem="dob-59-XfE" secondAttribute="height" multiplier="1:1" id="HmC-GT-8gN"/>
+                                    <constraint firstAttribute="height" constant="310" id="nhj-bc-bVT"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradientBall_red" translatesAutoresizingMaskIntoConstraints="NO" id="Mid-h5-3Yt">
+                                <rect key="frame" x="180" y="-55" width="310" height="310"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Hello!  We hate periods too but we’ll help you make yours better." lineBreakMode="tailTruncation" numberOfLines="4" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T1u-bw-ZgU">
+                                <rect key="frame" x="31" y="221" width="313" height="175"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="32"/>
+                                <color key="textColor" red="0.1647058824" green="0.18039215689999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mid-h5-3Yt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="115" id="3qN-Yc-AZN"/>
+                            <constraint firstItem="T1u-bw-ZgU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7QS-BV-Aof"/>
+                            <constraint firstItem="Mid-h5-3Yt" firstAttribute="height" secondItem="dob-59-XfE" secondAttribute="height" id="DZv-Xi-4Dc"/>
+                            <constraint firstItem="dob-59-XfE" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="310:667" id="Fly-Ua-UVa"/>
+                            <constraint firstItem="T1u-bw-ZgU" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="313:667" id="KKh-cY-Zrp"/>
+                            <constraint firstItem="T1u-bw-ZgU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="Mxp-6z-CwE"/>
+                            <constraint firstItem="Mid-h5-3Yt" firstAttribute="width" secondItem="dob-59-XfE" secondAttribute="height" multiplier="1:1" id="PVD-bJ-PJA"/>
+                            <constraint firstItem="T1u-bw-ZgU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="201" id="Q66-Bd-Gte"/>
+                            <constraint firstItem="dob-59-XfE" firstAttribute="top" secondItem="T1u-bw-ZgU" secondAttribute="bottom" constant="26" id="Ygb-KC-SHr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="dob-59-XfE" secondAttribute="leading" constant="115" id="ZCh-RK-PWa"/>
+                            <constraint firstItem="Mid-h5-3Yt" firstAttribute="width" secondItem="dob-59-XfE" secondAttribute="width" id="avi-Yh-6Ik"/>
+                            <constraint firstItem="dob-59-XfE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="65" id="oSi-dI-gHq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="Mid-h5-3Yt" secondAttribute="top" constant="75" id="sj9-Ct-3gE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gradientBall_blue" width="660" height="660"/>
+        <image name="gradientBall_red" width="692" height="642"/>
+    </resources>
+</document>
