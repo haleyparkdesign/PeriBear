@@ -1,8 +1,12 @@
 # PeriBear
 > Yonsei University Social Innovation Capstone Project 2
 
+> Won Social Innovation Award (first place) at Social IoT Project 2018, hosted by [Design Factory Global Network](https://dfgn.org/).
+
 ### What is PeriBear?
 PeriBear is an emotional support bear that helps you bear with your period.
+
+![pitch first page](slide_firstpage.jpeg "Slide first page")
 
 ### Problem Statement
 Half of the human race experience periods every month.
