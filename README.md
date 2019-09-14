@@ -9,8 +9,11 @@ PeriBear is an emotional support bear that helps you bear with your period.
 ![pitch first page](slide_firstpage.jpeg "Slide first page")
 
 ## Problem Statement
-Half of the human race experience periods every month.
-No matter how many times we experience it, it’s always stressful to keep track of when it’s coming and cope up with period pain.
+* Period cramps are often unbearable, especially for young girls.
+* Over-the-counter medicine for period cramps can bring dangerous side effects.
+* Existing heat products are not particularly usable in context of periods.
+* Periods or women's health is not discussed as often as they should be.
+
 
 ## Functions
 * uses ambient light to tell you when your period is coming.
@@ -18,5 +21,9 @@ No matter how many times we experience it, it’s always stressful to keep track
 * PeriBear app sends you notifications about your period.
 
 ## Team
-Haley Park([@hyojeongpark](https://github.com/hyojeongpark)),
+Haley Park([@haleyparkdesign](https://github.com/haleyparkdesign)),
 Phai Tulyathan([@phaituly](https://github.com/phaituly))
+
+## Featured
+[Yonsei University News](https://www.yonsei.ac.kr/ocx/news.jsp?mode=view&ar_seq=20190104120626122093&sr_volume=620&list_mode=list&sr_site=S&pager.offset=18) <br>
+[NYC Design Factory News](https://seidenbergnews.blogs.pace.edu/2018/12/10/the-social-iot-project-innovative-international-inspirational/)
